@@ -1,0 +1,342 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/types.h" include (:system-flag t) nil [40 62])
+            ("sys/socket.h" include (:system-flag t) nil [63 86])
+            ("netinet/in.h" include (:system-flag t) nil [87 110])
+            ("arpa/inet.h" include (:system-flag t) nil [111 133])
+            ("stdlib.h" include (:system-flag t) nil [134 153])
+            ("unistd.h" include (:system-flag t) nil [154 173])
+            ("MAX_SIZE" variable (:constant-flag t) nil [183 191])
+            ("NUM_CLIENT" variable (:constant-flag t) nil [203 213])
+            ("connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socket_desc" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [241 259]))                  
+                :type "void")
+                nil [216 260])
+            ("main" function (:type "int") nil [261 636])
+            ("connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("threadid" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [663 678]))                  
+                :type "void")
+                nil [638 1672]))          
+      :file "threaded_tcp_server.c"
+      :pointmax 1673
+      :fsize 1672
+      :lastmodtime '(22970 46640 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_SIZE" . ((number "50" 192 . 194)))
+          ("NUM_CLIENT" . ((number "5" 214 . 215)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [20 39])
+            ("sys/types.h" include (:system-flag t) nil [40 62])
+            ("sys/socket.h" include (:system-flag t) nil [63 86])
+            ("netinet/in.h" include (:system-flag t) nil [87 110])
+            ("arpa/inet.h" include (:system-flag t) nil [111 133])
+            ("stdlib.h" include (:system-flag t) nil [134 153])
+            ("unistd.h" include (:system-flag t) nil [154 173])
+            ("MAX_SIZE" variable (:constant-flag t) nil [183 191])
+            ("main" function (:type "int") nil [196 1834])
+            ("send" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("sock_desc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1482 1492])
+                    ("" variable (:type ("sbuff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1492 1498])
+                    ("" variable (:type ("strlen" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1498 1511]))                  
+                :type "int")
+                nil [1477 1515])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [1590 1606])
+            ("fputs" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("rbuff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1651 1657])
+                    ("" variable (:type ("stdout" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1657 1664]))                  
+                :type "int")
+                nil [1645 1665])
+            ("bzero" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("rbuff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1686 1692]))                  
+                :type "int")
+                nil [1680 1702]))          
+      :file "tcp_client.c"
+      :pointmax 1835
+      :fsize 1834
+      :lastmodtime '(22976 18769 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAX_SIZE" . ((number "50" 192 . 194)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [67 84])
+            ("string.h" include (:system-flag t) nil [85 103])
+            ("stdlib.h" include (:system-flag t) nil [116 134])
+            ("sys/socket.h" include (:system-flag t) nil [147 169])
+            ("arpa/inet.h" include (:system-flag t) nil [170 191])
+            ("unistd.h" include (:system-flag t) nil [204 222])
+            ("pthread.h" include (:system-flag t) nil [234 253])
+            ("BUFLEN" variable (:constant-flag t) nil [318 324])
+            ("errno.h" include (:system-flag t) nil [291 308])
+            ("BUFLEN" variable (:constant-flag t) nil [318 324])
+            ("connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [379 386]))                  
+                :type "void")
+                nil [354 387])
+            ("error" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [401 417]))                  
+                :type "void")
+                nil [390 445])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [458 468])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [469 482]))                  
+                :type "int")
+                nil [449 1882])
+            ("connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("socket_desc" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1962 1980]))                  
+                :type "void")
+                nil [1937 3532]))          
+      :file "realtcpserver.c"
+      :pointmax 3533
+      :fsize 3532
+      :lastmodtime '(22970 51301 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUFLEN" . ((number "1024" 325 . 329)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [79 97])
+            ("stdlib.h" include (:system-flag t) nil [98 117])
+            ("string.h" include (:system-flag t) nil [118 137])
+            ("unistd.h" include (:system-flag t) nil [138 157])
+            ("sys/types.h" include (:system-flag t) nil [158 180])
+            ("sys/socket.h" include (:system-flag t) nil [181 204])
+            ("netinet/in.h" include (:system-flag t) nil [205 228])
+            ("netdb.h" include (:system-flag t) nil [229 247])
+            ("BUFSIZE" variable (:constant-flag t) nil [257 264])
+            ("error" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [319 329]))                  
+                :type "void")
+                nil [308 363])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [374 383])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [384 396]))                  
+                :type "int")
+                nil [365 2008]))          
+      :file "simple_tcp_client.c"
+      :pointmax 2009
+      :fsize 2006
+      :lastmodtime '(22970 47668 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUFSIZE" . ((number "1024" 265 . 269)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("main" function (:type "int") nil [41 577]))          
+      :file "forkexample.c"
+      :pointmax 578
+      :fsize 577
+      :lastmodtime '(22970 49679 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("errno.h" include (:system-flag t) nil [40 58])
+            ("string.h" include (:system-flag t) nil [59 78])
+            ("sys/types.h" include (:system-flag t) nil [79 101])
+            ("netinet/in.h" include (:system-flag t) nil [102 125])
+            ("sys/wait.h" include (:system-flag t) nil [126 147])
+            ("sys/socket.h" include (:system-flag t) nil [148 171])
+            ("signal.h" include (:system-flag t) nil [172 191])
+            ("ctype.h" include (:system-flag t) nil [192 210])
+            ("arpa/inet.h" include (:system-flag t) nil [211 233])
+            ("netdb.h" include (:system-flag t) nil [234 252])
+            ("PORT" variable (:constant-flag t) nil [262 266])
+            ("BACKLOG" variable (:constant-flag t) nil [281 288])
+            ("LENGTH" variable (:constant-flag t) nil [299 305])
+            ("error" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [322 338]))                  
+                :type "void")
+                nil [311 366])
+            ("main" function (:type "int") nil [368 4149]))          
+      :file "example_file_server.c"
+      :pointmax 4150
+      :fsize 4149
+      :lastmodtime '(22970 50776 0 0)
+      :unmatched-syntax '((INT 4175 . 4178) (INT 4175 . 4178) (INT 4175 . 4178) (INT 4175 . 4178) (INT 4175 . 4178) (INT 4175 . 4178) (INT 4175 . 4178))
+      :lexical-table 
+        '(("PORT" . ((number "20000" 267 . 272)))
+          ("BACKLOG" . ((number "5" 289 . 290)))
+          ("LENGTH" . ((number "512" 306 . 309)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags nil
+      :file "exampleFSS.c"
+      :pointmax 13609
+      :fsize 13608
+      :lastmodtime '(22970 50795 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "int") nil [21 207]))          
+      :file "filewrite.c"
+      :pointmax 208
+      :fsize 207
+      :lastmodtime '(22970 51252 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("pthread.h" include (:system-flag t) nil [20 40])
+            ("func1" function
+               (:pointer 1
+                :type "void")
+                nil [43 143])
+            ("func2" function
+               (:pointer 1
+                :type "void")
+                nil [145 245])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [256 261]))                  
+                :type "int")
+                nil [247 775]))          
+      :file "pthreadfun.c"
+      :pointmax 776
+      :fsize 775
+      :lastmodtime '(22975 49689 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("pthread.h" include (:system-flag t) nil [40 60])
+            ("unistd.h" include (:system-flag t) nil [61 80])
+            ("NUM_THREADS" variable (:constant-flag t) nil [90 101])
+            ("_thread_data_t" type
+               (:members 
+                  ( ("tid" variable (:type "int") (reparse-symbol classsubparts) [193 201])
+                    ("stuff" variable (:type "double") (reparse-symbol classsubparts) [206 219]))                  
+                :type "struct")
+                nil [157 236])
+            ("thread_data_t" type
+               (:typedef ("_thread_data_t" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [157 236])
+            ("thr_func" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [275 285]))                  
+                :type "void")
+                nil [260 491])
+            ("thr_func2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [537 547]))                  
+                :type "void")
+                nil [521 755])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [766 775])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [776 793]))                  
+                :type "int")
+                nil [757 1668]))          
+      :file "pthreadexample.c"
+      :pointmax 1669
+      :fsize 1668
+      :lastmodtime '(22975 51713 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NUM_THREADS" . ((number "2" 102 . 103)))
+          )
+))
+  :file "!Users!samuellough!Documents!Dev Study!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

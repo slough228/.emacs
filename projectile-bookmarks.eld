@@ -1,0 +1,1 @@
+("~/Documents/DevAssess/" "~/.emacs.d/" "~/Documents/ANSI_C/chapter_6_structures/" "~/Documents/ANSI_C/c-demo-project/")

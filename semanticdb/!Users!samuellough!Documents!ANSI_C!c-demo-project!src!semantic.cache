@@ -1,0 +1,62 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("feature1/feature1.h" include nil nil [1 31])
+            ("feature1_func1" function (:type "void") nil [33 58])
+            ("feature1_func2" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [79 85]))                  
+                :type "int")
+                nil [60 89]))          
+      :file "feature1.c"
+      :pointmax 90
+      :fsize 89
+      :lastmodtime '(22960 14277 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lib1.h" include nil nil [1 18])
+            ("lib2.h" include nil nil [19 36])
+            ("stdio.h" include (:system-flag t) nil [37 55])
+            ("ctypes.h" include (:system-flag t) nil [56 75])
+            ("lib_func1" function (:type "void") nil [77 98])
+            ("lib_func2" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [114 120]))                  
+                :type "int")
+                nil [100 124])
+            ("lib_func3" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [142 148])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [149 155]))                  
+                :type "int")
+                nil [128 159]))          
+      :file "lib1.c"
+      :pointmax 160
+      :fsize 159
+      :lastmodtime '(22960 15907 0 0)
+      :unmatched-syntax '((symbol 160 . 162) (semantic-list 167 . 169) (symbol 163 . 167) (symbol 161 . 162) (semantic-list 170 . 172) (symbol 163 . 170)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("lib2.h" include nil nil [1 18])
+            ("lib2_func" function (:type "void") nil [20 40])
+            ("lib2_func" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [56 62]))                  
+                :type "int")
+                nil [42 65]))          
+      :file "lib2.c"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(22960 14058 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!ANSI_C!c-demo-project!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

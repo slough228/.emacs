@@ -1,0 +1,499 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [46 65])
+            ("stdlib.h" include (:system-flag t) nil [91 110])
+            ("arpa/inet.h" include (:system-flag t) nil [137 159])
+            ("sys/socket.h" include (:system-flag t) nil [160 183])
+            ("unistd.h" include (:system-flag t) nil [184 203])
+            ("pthread.h" include (:system-flag t) nil [204 224])
+            ("BUFLEN" variable (:constant-flag t) nil [235 241])
+            ("PORT" variable (:constant-flag t) nil [291 295])
+            ("TCP_PORT" variable (:constant-flag t) nil [361 369])
+            ("FSS_IP" variable (:constant-flag t) nil [434 440])
+            ("FSS_UDP_PORT" variable (:constant-flag t) nil [461 473])
+            ("FSS_TCP_PORT" variable (:constant-flag t) nil [487 499])
+            ("custhdr" type
+               (:members 
+                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [527 545])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [550 570])
+                    ("fss_ip" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [575 592])
+                    ("dest_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [597 617])
+                    ("enc_byte_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [622 645]))                  
+                :type "struct")
+                nil [506 697])
+            ("packet" variable
+               (:pointer 1
+                :type ("custhdr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [699 723])
+            ("udprequest" type
+               (:members 
+                  ( ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [746 764])
+                    ("from" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [766 790])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [792 809]))                  
+                :type "struct")
+                nil [726 812])
+            ("udpserve" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [828 837]))                  
+                :type "void")
+                nil [814 838])
+            ("UDP_connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [868 883]))                  
+                :type "void")
+                nil [839 884])
+            ("tcpserve" function
+               (:prototype-flag t
+                :type "void")
+                nil [905 921])
+            ("TCP_connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [951 966]))                  
+                :type "void")
+                nil [922 967])
+            ("udpclient" function
+               (:prototype-flag t
+                :pointer 1
+                :type "char")
+                nil [968 987])
+            ("tcp_client" function
+               (:prototype-flag t
+                :pointer 1
+                :type "char")
+                nil [988 1008])
+            ("store_packet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1027 1037]))                  
+                :type "void")
+                nil [1009 1038])
+            ("decider" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1108 1118]))                  
+                :type "int")
+                nil [1096 1254])
+            ("store_packet" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1274 1284]))                  
+                :type "void")
+                nil [1256 1972])
+            ("die" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1983 1991]))                  
+                :type "void")
+                nil [1974 2023])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2034 2039]))                  
+                :type "int")
+                nil [2025 2275])
+            ("udpclient" function
+               (:pointer 1
+                :type "char")
+                nil [2341 4164])
+            ("tcpserve" function (:type "void") nil [4167 5465])
+            ("TCP_connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5682 5697]))                  
+                :type "void")
+                nil [5653 7309])
+            ("udpserve" function
+               (:arguments 
+                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [7326 7335]))                  
+                :type "void")
+                nil [7312 10571])
+            ("UDP_connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10685 10701]))                  
+                :type "void")
+                nil [10655 10956]))          
+      :file "udpserver.c"
+      :pointmax 10957
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TCP_PORT" . ((number "7777" 370 . 374)))
+          ("FSS_UDP_PORT" . ((number "8888" 474 . 478)))
+          ("BUFLEN" . ((number "1024" 242 . 246)))
+          ("PORT" . ((number "6666" 296 . 300)))
+          ("FSS_IP" . ((string "\"127.0.0.1\"" 441 . 452)))
+          ("FSS_TCP_PORT" . ((number "9999" 500 . 504)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [29 46])
+            ("string.h" include (:system-flag t) nil [56 74])
+            ("stdlib.h" include (:system-flag t) nil [84 102])
+            ("arpa/inet.h" include (:system-flag t) nil [114 135])
+            ("sys/socket.h" include (:system-flag t) nil [136 158])
+            ("SERVER" variable (:constant-flag t) nil [168 174])
+            ("BUFLEN" variable (:constant-flag t) nil [195 201])
+            ("PORT" variable (:constant-flag t) nil [238 242])
+            ("die" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [293 301]))                  
+                :type "void")
+                nil [284 333])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [492 497]))                  
+                :type "int")
+                nil [483 1633]))          
+      :file "udpclient.c"
+      :pointmax 1634
+      :fsize 1633
+      :lastmodtime '(22970 47078 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUFLEN" . ((number "512" 202 . 205)))
+          ("PORT" . ((number "9999" 243 . 247)))
+          ("SERVER" . ((string "\"127.0.0.1\"" 175 . 186)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sys" include nil nil [1 11])
+            ("socket" include nil nil [12 25])
+            ("udpserve" function nil nil [27 410])
+            ("tcpserve" function nil nil [411 968])
+            ("main" function nil nil [987 1014])
+            ("if" code nil nil [1015 1052]))          
+      :file "filestorage.py"
+      :pointmax 1052
+      :fsize 1051
+      :lastmodtime '(22969 42542 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [57 75])
+            ("sys/types.h" include (:system-flag t) nil [76 98])
+            ("sys/socket.h" include (:system-flag t) nil [99 122])
+            ("stdlib.h" include (:system-flag t) nil [123 142])
+            ("errno.h" include (:system-flag t) nil [143 161])
+            ("string.h" include (:system-flag t) nil [162 181])
+            ("arpa/inet.h" include (:system-flag t) nil [182 204])
+            ("unistd.h" include (:system-flag t) nil [205 224])
+            ("netinet/in.h" include (:system-flag t) nil [225 248])
+            ("PORT_NUMBER" variable (:constant-flag t) nil [258 269])
+            ("SERVER_ADDRESS" variable (:constant-flag t) nil [287 301])
+            ("FILENAME" variable (:constant-flag t) nil [325 333])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [369 378])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [379 391]))                  
+                :type "int")
+                nil [360 2262]))          
+      :file "FileReceiveTCP.c"
+      :pointmax 2262
+      :fsize 2261
+      :lastmodtime '(22970 48513 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("FILENAME" . ((string "\"/home/toc/foo.c\"" 341 . 358)))
+          ("PORT_NUMBER" . ((number "5000" 274 . 278)))
+          ("SERVER_ADDRESS" . ((string "\"192.168.1.7\"" 303 . 316)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [46 65])
+            ("stdlib.h" include (:system-flag t) nil [91 110])
+            ("arpa/inet.h" include (:system-flag t) nil [137 159])
+            ("sys/socket.h" include (:system-flag t) nil [160 183])
+            ("unistd.h" include (:system-flag t) nil [184 203])
+            ("pthread.h" include (:system-flag t) nil [204 224])
+            ("BUFLEN" variable (:constant-flag t) nil [235 241])
+            ("UDP_PORT" variable (:constant-flag t) nil [291 299])
+            ("TCP_PORT" variable (:constant-flag t) nil [365 373])
+            ("FSS_IP" variable (:constant-flag t) nil [438 444])
+            ("FSS_UDP_PORT" variable (:constant-flag t) nil [465 477])
+            ("FSS_TCP_PORT" variable (:constant-flag t) nil [491 503])
+            ("NUM_SERVER_THREADS" variable (:constant-flag t) nil [517 535])
+            ("MAXTHREADS" variable (:constant-flag t) nil [546 556])
+            ("sockudp" variable (:type "int") nil [586 608])
+            ("recv_len" variable (:type "int") nil [586 608])
+            ("ConnThread" type
+               (:members 
+                  ( ("connection_id" variable (:type "int") (reparse-symbol classsubparts) [630 648])
+                    ("next_thread" variable
+                       (:pointer 1
+                        :type ("ConnThread" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [650 681]))                  
+                :type "struct")
+                nil [610 684])
+            ("custhdr" type
+               (:members 
+                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [707 725])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [730 750])
+                    ("fss_ip" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [755 772])
+                    ("dest_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [777 797])
+                    ("enc_byte_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [802 825])
+                    ("enc_pattern" variable (:type "unsigned char") (reparse-symbol classsubparts) [830 856]))                  
+                :type "struct")
+                nil [686 882])
+            ("packet" variable
+               (:pointer 1
+                :type ("custhdr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [884 908])
+            ("udprequest" type
+               (:members 
+                  ( ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [930 948])
+                    ("from" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [950 974])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [976 1002]))                  
+                :type "struct")
+                nil [910 1005])
+            ("udpserve" function
+               (:prototype-flag t
+                :pointer 1
+                :type "void")
+                nil [1008 1026])
+            ("UDP_connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1056 1071]))                  
+                :type "void")
+                nil [1027 1072])
+            ("tcpserve" function
+               (:prototype-flag t
+                :pointer 1
+                :type "void")
+                nil [1073 1091])
+            ("TCP_connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1121 1136]))                  
+                :type "void")
+                nil [1092 1137])
+            ("udpclient" function
+               (:prototype-flag t
+                :pointer 1
+                :type "char")
+                nil [1138 1157])
+            ("tcp_client" function
+               (:prototype-flag t
+                :pointer 1
+                :type "char")
+                nil [1158 1178])
+            ("store_packet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1197 1207]))                  
+                :type "void")
+                nil [1179 1208])
+            ("printbuf" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1225 1244]))                  
+                :type "void")
+                nil [1209 1245])
+            ("decider" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1315 1325]))                  
+                :type "int")
+                nil [1303 1461])
+            ("store_packet" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1481 1491]))                  
+                :type "void")
+                nil [1463 1809])
+            ("die" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1820 1828]))                  
+                :type "void")
+                nil [1811 1860])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1871 1876]))                  
+                :type "int")
+                nil [1862 2690])
+            ("udpclient" function
+               (:pointer 1
+                :type "char")
+                nil [2756 4579])
+            ("tcpserve" function
+               (:pointer 1
+                :type "void")
+                nil [4582 6055])
+            ("TCP_connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6270 6285]))                  
+                :type "void")
+                nil [6241 7893])
+            ("udpserve" function
+               (:pointer 1
+                :type "void")
+                nil [7896 10180])
+            ("UDP_connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [10294 10314]))                  
+                :type "void")
+                nil [10264 11302])
+            ("printbuf" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [11320 11339]))                  
+                :type "void")
+                nil [11304 11542]))          
+      :file "FileTransferService.c"
+      :pointmax 11543
+      :fsize 11542
+      :lastmodtime '(22976 14292 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TCP_PORT" . ((number "7777" 374 . 378)))
+          ("FSS_UDP_PORT" . ((number "8888" 478 . 482)))
+          ("NUM_SERVER_THREADS" . ((number "2" 536 . 537)))
+          ("BUFLEN" . ((number "1024" 242 . 246)))
+          ("UDP_PORT" . ((number "6666" 300 . 304)))
+          ("FSS_IP" . ((string "\"127.0.0.1\"" 445 . 456)))
+          ("FSS_TCP_PORT" . ((number "9999" 504 . 508)))
+          ("MAXTHREADS" . ((number "1000" 557 . 561)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [46 65])
+            ("stdlib.h" include (:system-flag t) nil [91 110])
+            ("arpa/inet.h" include (:system-flag t) nil [137 159])
+            ("sys/socket.h" include (:system-flag t) nil [160 183])
+            ("BUFLEN" variable (:constant-flag t) nil [193 199])
+            ("PORT" variable (:constant-flag t) nil [249 253])
+            ("die" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [321 329]))                  
+                :type "void")
+                nil [312 361])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [376 381]))                  
+                :type "int")
+                nil [367 933]))          
+      :file "udpserver.c~"
+      :pointmax 934
+      :fsize 933
+      :lastmodtime '(22966 39901 0 0)
+      :unmatched-syntax '((INT 363 . 366))
+      :lexical-table 
+        '(("BUFLEN" . ((number "512" 200 . 203)))
+          ("PORT" . ((number "8888" 254 . 258)))
+          )
+))
+  :file "!Users!samuellough!Documents!DevAssess!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

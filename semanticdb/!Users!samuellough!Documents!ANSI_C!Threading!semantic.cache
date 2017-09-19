@@ -1,0 +1,49 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("pthread.h" include (:system-flag t) nil [1 21])
+            ("stdio.h" include (:system-flag t) nil [22 40])
+            ("stdlib.h" include (:system-flag t) nil [41 60])
+            ("COUNT_TO" variable (:constant-flag t) nil [70 78])
+            ("MAX_CORES" variable (:constant-flag t) nil [95 104])
+            ("mutex" variable
+               (:typemodifiers ("static")
+                :default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [108 165])
+            ("i" variable
+               (:default-value "0"
+                :type "long long")
+                nil [166 182])
+            ("start_counting" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [205 215]))                  
+                :type "void")
+                nil [184 571])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [582 587]))                  
+                :type "int")
+                nil [573 1035]))          
+      :file "mutexex.c"
+      :pointmax 1036
+      :fsize 1035
+      :lastmodtime '(22967 60480 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("COUNT_TO" . ((number "100000" 80 . 86)))
+          ("MAX_CORES" . ((number "6" 105 . 106)))
+          )
+))
+  :file "!Users!samuellough!Documents!ANSI_C!Threading!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

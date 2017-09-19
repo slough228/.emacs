@@ -1,0 +1,287 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("point" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [38 44])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [49 55]))                  
+                :type "struct")
+                nil [20 58])
+            ("pt" variable (:type ("point" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [61 77])
+            ("maxpt" variable
+               (:default-value "{342, 204}"
+                :type "int")
+                nil [85 104])
+            ("printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("pt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [125 128])
+                    ("" variable (:type ("x" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [128 130])
+                    ("" variable (:type ("pt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [131 134])
+                    ("" variable (:type ("y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [134 136]))                  
+                :type "int")
+                nil [106 137])
+            ("dist" variable (:type "double") nil [192 218])
+            ("sqrt" variable (:type "double") nil [192 218])
+            ("dist" variable
+               (:default-value "sqrt((double)pt.x * pt.x + (double)pt.y * pt.y)"
+                :type "int")
+                nil [220 275])
+            ("rect" type
+               (:members 
+                  ( ("pt1" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [390 407])
+                    ("pt2" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [412 429]))                  
+                :type "struct")
+                nil [373 432])
+            ("screen" variable (:type ("rect" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [434 453])
+            ("x" variable (:type "int") nil [466 468]))          
+      :file "basics.c"
+      :pointmax 526
+      :fsize 525
+      :lastmodtime '(22967 942 0 0)
+      :unmatched-syntax '((punctuation 465 . 466) (symbol 462 . 465) (punctuation 461 . 462) (symbol 455 . 461) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 465 . 466) (symbol 462 . 465) (punctuation 461 . 462) (symbol 455 . 461) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 465 . 466) (symbol 462 . 465) (punctuation 461 . 462) (symbol 455 . 461) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 465 . 466) (symbol 462 . 465) (punctuation 461 . 462) (symbol 455 . 461) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 462 . 464) (punctuation 461 . 462) (symbol 455 . 461) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 462 . 463) (punctuation 461 . 462) (symbol 455 . 461) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (semantic-list 384 . 431) (symbol 380 . 384) (STRUCT 373 . 379) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (semantic-list 384 . 392) (symbol 380 . 384) (STRUCT 373 . 379) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (semantic-list 231 . 239) (symbol 227 . 231) (punctuation 225 . 226) (symbol 220 . 224) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 227 . 231) (punctuation 225 . 226) (symbol 220 . 224) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 227 . 231) (punctuation 225 . 226) (symbol 220 . 224) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 227 . 228) (punctuation 225 . 226) (symbol 220 . 224) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (semantic-list 209 . 211) (symbol 205 . 209) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 205 . 208) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 205 . 207) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 205 . 206) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 205 . 209) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 205 . 208) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84) (symbol 205 . 208) (punctuation 203 . 204) (symbol 199 . 203) (DOUBLE 192 . 198) (punctuation 133 . 134) (punctuation 127 . 128) (string 113 . 123) (STRUCT 78 . 84)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("point" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [20 26])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [31 37]))                  
+                :type "struct")
+                nil [1 40])
+            ("rect" type
+               (:members 
+                  ( ("pt1" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [60 77])
+                    ("pt2" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [82 99]))                  
+                :type "struct")
+                nil [43 102])
+            ("makepoint" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [183 189])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [190 196]))                  
+                :type ("point" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [160 273])
+            ("middle" variable (:type ("point" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [275 295])
+            ("makepoint" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [319 323])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [324 328]))                  
+                :type ("point" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [296 329])
+            ("screenn" variable (:type ("rect" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [330 350])
+            ("XMAX" variable (:constant-flag t) nil [360 364])
+            ("YMAX" variable (:constant-flag t) nil [378 382])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [397 406])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [407 424]))                  
+                :type "int")
+                nil [388 789])
+            ("addpoint" function
+               (:arguments 
+                  ( ("p1" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [845 861])
+                    ("p2" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [862 878]))                  
+                :type ("point" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [823 933])
+            ("ptinrect" function
+               (:arguments 
+                  ( ("r" variable (:type ("rect" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [993 1007])
+                    ("p" variable (:type ("point" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1008 1023]))                  
+                :type "int")
+                nil [980 1114])
+            ("min" variable (:constant-flag t) nil [1124 1127])
+            ("max" variable (:constant-flag t) nil [1166 1169])
+            ("canonrect" function
+               (:arguments 
+                  ( ("r" variable (:type ("rect" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1278 1292]))                  
+                :type ("rect" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1256 1478]))          
+      :file "makepoint.c"
+      :pointmax 1479
+      :fsize 1478
+      :lastmodtime '(22967 50957 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("max" (spp-arg-list ("a" "b") 1013 . 1019) . ((semantic-list "((a) > (b) > (a) : (b))" 1020 . 1043)))
+          ("min" (spp-arg-list ("a" "b") 971 . 977) . ((semantic-list "((a) < (b) ? (a) : (b))" 978 . 1001)))
+          ("XMAX" . ((number "1000" 365 . 369)))
+          ("YMAX" . ((number "900" 383 . 386)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("Node" type
+               (:members 
+                  ( ("data" variable (:type "int") (reparse-symbol classsubparts) [67 76])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("Node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [81 99]))                  
+                :type "struct")
+                nil [41 107])
+            ("node" type
+               (:typedef ("Node" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [41 107])
+            ("insert" function
+               (:arguments 
+                  ( ("pointer" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [121 135])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [136 145]))                  
+                :type "void")
+                nil [109 522])
+            ("find" function
+               (:arguments 
+                  ( ("pointer" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [533 548])
+                    ("key" variable (:type "int") (reparse-symbol arg-sub-list) [549 557]))                  
+                :type "int")
+                nil [524 943])
+            ("print" function
+               (:arguments 
+                  ( ("start" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1560 1572])
+                    ("pointer" variable
+                       (:pointer 1
+                        :type ("node" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1573 1587]))                  
+                :type "void")
+                nil [1549 1709])
+            ("main" function (:type "int") nil [1712 3031]))          
+      :file "singly_linked_list.c"
+      :pointmax 3032
+      :fsize 3031
+      :lastmodtime '(22967 5520 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("structure" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("one" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [81 93])
+                          ("two" variable
+                             (:dereference 1
+                              :type "unsigned char")
+                              (reparse-symbol classsubparts) [127 148]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [60 190])
+            ("my_struct" variable (:type ("structure" type (:type "class") nil nil)) nil [192 212])
+            ("array" variable
+               (:dereference 1
+                :default-value "{
+    0x41, 0x42, 0x43, 0x44, 0x00, /* ABCD\\0 */
+    0x22, 0xB8        /* 8888 (base10) */
+}"
+                :type "char")
+                nil [214 322])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [333 342])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [343 360]))                  
+                :type "int")
+                nil [324 667]))          
+      :file "strucalign.c"
+      :pointmax 668
+      :fsize 667
+      :lastmodtime '(22970 45657 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("build" function nil nil [1 44])
+            ("run" function nil nil [44 67]))          
+      :file "Makefile"
+      :pointmax 67
+      :fsize 66
+      :lastmodtime '(22970 41302 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!ANSI_C!chapter_6_structures!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
