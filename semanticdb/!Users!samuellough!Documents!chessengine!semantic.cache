@@ -1,0 +1,631 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("DEFS_H" variable (:constant-flag t) nil [60 66])
+            ("stdlib.h" include (:system-flag t) nil [68 87])
+            ("ASSERT" variable (:constant-flag t) nil [128 134])
+            ("U64" type
+               (:typedef ("unsigned long long")
+                :type "typedef")
+                nil [406 437])
+            ("NAME" variable (:constant-flag t) nil [447 451])
+            ("BRD_SQ_NUM" variable (:constant-flag t) nil [471 481])
+            ("MAX_GAME_MOVES" variable (:constant-flag t) nil [494 508])
+            ("" type
+               (:members 
+                  ( ("EMPTY" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [523 529])
+                    ("wP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [530 533])
+                    ("wN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [534 537])
+                    ("wR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [538 541])
+                    ("wB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [542 545])
+                    ("wQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [546 549])
+                    ("wK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [550 553])
+                    ("bP" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [554 557])
+                    ("bN" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [558 561])
+                    ("bR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [562 565])
+                    ("bB" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [566 569])
+                    ("bQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [570 573])
+                    ("bK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [574 577]))                  
+                :type "enum")
+                nil [516 578])
+            ("" type
+               (:members 
+                  ( ("FILE_A" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [586 593])
+                    ("FILE_B" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [594 601])
+                    ("FILE_C" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [603 610])
+                    ("FILE_D" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [612 619])
+                    ("FILE_E" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [620 627])
+                    ("FILE_F" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [628 635])
+                    ("FILE_G" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [636 643])
+                    ("FILE_H" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [644 651])
+                    ("FILE_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [652 663]))                  
+                :type "enum")
+                nil [579 664])
+            ("" type
+               (:members 
+                  ( ("RANK_1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [672 679])
+                    ("RANK_2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [680 687])
+                    ("RANK_3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [688 695])
+                    ("RANK_4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [696 703])
+                    ("RANK_5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [704 711])
+                    ("RANK_6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [712 719])
+                    ("RANK_7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [720 727])
+                    ("RANK_8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [728 735])
+                    ("RANK_NONE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [736 747]))                  
+                :type "enum")
+                nil [665 748])
+            ("" type
+               (:members 
+                  ( ("WHITE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [756 762])
+                    ("BLACK" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [763 769])
+                    ("BOTH" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [770 776]))                  
+                :type "enum")
+                nil [749 777])
+            ("" type
+               (:members 
+                  ( ("A1" variable
+                       (:constant-flag t
+                        :default-value (795 797)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [790 797])
+                    ("B1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [799 802])
+                    ("C1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [803 806])
+                    ("D1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [807 810])
+                    ("E1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [811 814])
+                    ("F1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [815 818])
+                    ("G1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [819 822])
+                    ("H1" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [823 826])
+                    ("A2" variable
+                       (:constant-flag t
+                        :default-value (836 838)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [831 838])
+                    ("B2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [840 843])
+                    ("C2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [844 847])
+                    ("D2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [848 851])
+                    ("E2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [852 855])
+                    ("F2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [856 859])
+                    ("G2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [860 863])
+                    ("H2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [864 867])
+                    ("A3" variable
+                       (:constant-flag t
+                        :default-value (877 879)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [872 879])
+                    ("B3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [881 884])
+                    ("C3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [885 888])
+                    ("D3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [889 892])
+                    ("E3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [893 896])
+                    ("F3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [897 900])
+                    ("G3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [901 904])
+                    ("H3" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [905 908])
+                    ("A4" variable
+                       (:constant-flag t
+                        :default-value (918 920)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [913 920])
+                    ("B4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [922 925])
+                    ("C4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [926 929])
+                    ("D4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [930 933])
+                    ("E4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [934 937])
+                    ("F4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [938 941])
+                    ("G4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [942 945])
+                    ("H4" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [946 949])
+                    ("A5" variable
+                       (:constant-flag t
+                        :default-value (959 961)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [954 961])
+                    ("B5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [963 966])
+                    ("C5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [967 970])
+                    ("D5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [971 974])
+                    ("E5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [975 978])
+                    ("F5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [979 982])
+                    ("G5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [983 986])
+                    ("H5" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [987 990])
+                    ("A6" variable
+                       (:constant-flag t
+                        :default-value (1000 1002)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [995 1002])
+                    ("B6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1004 1007])
+                    ("C6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1008 1011])
+                    ("D6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1012 1015])
+                    ("E6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1016 1019])
+                    ("F6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1020 1023])
+                    ("G6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1024 1027])
+                    ("H6" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1028 1031])
+                    ("A7" variable
+                       (:constant-flag t
+                        :default-value (1041 1043)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1036 1043])
+                    ("B7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1045 1048])
+                    ("C7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1049 1052])
+                    ("D7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1053 1056])
+                    ("E7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1057 1060])
+                    ("F7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1061 1064])
+                    ("G7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1065 1068])
+                    ("H7" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1069 1072])
+                    ("A8" variable
+                       (:constant-flag t
+                        :default-value (1082 1084)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1077 1084])
+                    ("B8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1086 1089])
+                    ("C8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1090 1093])
+                    ("D8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1094 1097])
+                    ("E8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1098 1101])
+                    ("F8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1102 1105])
+                    ("G8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1106 1109])
+                    ("H8" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1110 1113])
+                    ("NO_SQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1114 1121]))                  
+                :type "enum")
+                nil [779 1122])
+            ("" type
+               (:members 
+                  ( ("FALSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1131 1137])
+                    ("TRUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1138 1143]))                  
+                :type "enum")
+                nil [1124 1144])
+            ("" type
+               (:members 
+                  ( ("WKCA" variable
+                       (:constant-flag t
+                        :default-value (1245 1246)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1238 1246])
+                    ("WQCA" variable
+                       (:constant-flag t
+                        :default-value (1255 1256)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1248 1256])
+                    ("BKCA" variable
+                       (:constant-flag t
+                        :default-value (1265 1266)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1258 1266])
+                    ("BQCA" variable
+                       (:constant-flag t
+                        :default-value (1275 1276)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1268 1276]))                  
+                :type "enum")
+                nil [1231 1278])
+            ("S_UNDO" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("move" variable (:type "int") (reparse-symbol classsubparts) [1316 1325])
+                          ("castlePerm" variable (:type "int") (reparse-symbol classsubparts) [1330 1345])
+                          ("enPas" variable (:type "int") (reparse-symbol classsubparts) [1350 1360])
+                          ("fiftyMove" variable (:type "int") (reparse-symbol classsubparts) [1365 1379])
+                          ("posKey" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1384 1395]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1295 1406])
+            ("S_BOARD" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("pieces" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1430 1453])
+                          ("pawns" variable
+                             (:dereference 1
+                              :type ("U64" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [1458 1471])
+                          ("KingsSq" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1606 1621])
+                          ("side" variable (:type "int") (reparse-symbol classsubparts) [1627 1636])
+                          ("enPas" variable (:type "int") (reparse-symbol classsubparts) [1677 1687])
+                          ("fiftyMove" variable (:type "int") (reparse-symbol classsubparts) [1692 1706])
+                          ("ply" variable (:type "int") (reparse-symbol classsubparts) [1749 1757])
+                          ("hisPly" variable (:type "int") (reparse-symbol classsubparts) [1762 1773])
+                          ("castlePerm" variable (:type "int") (reparse-symbol classsubparts) [1779 1794])
+                          ("posKey" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1800 1811])
+                          ("pceNum" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1817 1832])
+                          ("bigPce" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1837 1851])
+                          ("majPce" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1899 1913])
+                          ("minPce" variable
+                             (:dereference 1
+                              :type "int")
+                              (reparse-symbol classsubparts) [1954 1968])
+                          ("history" variable
+                             (:dereference 1
+                              :type ("S_UNDO" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [2008 2039])
+                          ("pList" variable
+                             (:dereference 2
+                              :type "int")
+                              (reparse-symbol classsubparts) [2064 2082]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1408 2168])
+            ("FR2SQ" variable (:constant-flag t) nil [2192 2197])
+            ("SQ64" variable (:constant-flag t) nil [2238 2242])
+            ("Sq120ToSq64" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [2284 2319])
+            ("Sq64ToSq120" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type "int")
+                nil [2320 2347])
+            ("AllInit" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :type "void")
+                nil [2375 2397])
+            ("PrintBitBoard" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("bb" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2440 2447]))                  
+                :type "void")
+                nil [2414 2448]))          
+      :file "defs.h"
+      :pointmax 2458
+      :fsize 1947
+      :lastmodtime '(23023 29877 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEFS_H")
+          ("ASSERT" (spp-arg-list ("n") 134 . 137))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("defs.h" include nil nil [21 38])
+            ("main" function (:type "int") nil [40 397]))          
+      :file "vice.c"
+      :pointmax 411
+      :fsize 418
+      :lastmodtime '(23061 62700 440134 685000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("defs.h" include nil nil [20 37])
+            ("PrintBitBoard" function
+               (:arguments 
+                  ( ("bb" variable (:type ("U64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [58 65]))                  
+                :type "void")
+                nil [39 633]))          
+      :file "bitboards.c"
+      :pointmax 634
+      :fsize 490
+      :lastmodtime '(23023 29906 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [12 30])
+            ("defs.h" include nil nil [31 48])
+            ("Sq120toSq64" variable
+               (:dereference 1
+                :type "int")
+                nil [52 80])
+            ("Sq64toSq120" variable
+               (:dereference 1
+                :type "int")
+                nil [81 101])
+            ("AllInit" function (:type "void") nil [103 778]))          
+      :file "init.c"
+      :pointmax 779
+      :fsize 610
+      :lastmodtime '(23023 29922 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("all" function nil nil [1 45]))          
+      :file "makefile"
+      :pointmax 45
+      :fsize 44
+      :lastmodtime '(23016 46754 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!chessengine!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

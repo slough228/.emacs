@@ -1,0 +1,119 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("WORKAROUND_DWA2002126_HPP" variable (:constant-flag t) nil [233 258])
+            ("boost/config/workaround.hpp" include (:system-flag t) nil [260 298]))          
+      :file "workaround.hpp"
+      :pointmax 336
+      :fsize 335
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("WORKAROUND_DWA2002126_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ITERATOR_DWA122600_HPP_" variable (:constant-flag t) nil [236 259])
+            ("iterator" include (:system-flag t) nil [313 332])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("std::iterator_traits" using (:type ("std::iterator_traits" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [482 509])
+                            ("std::distance" using (:type ("std::distance" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [510 530]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [462 991]))                  
+                :type "namespace")
+                nil [443 1014]))          
+      :file "iterator.hpp"
+      :pointmax 1069
+      :fsize 1068
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ITERATOR_DWA122600_HPP_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_DETAIL_ATOMIC_COUNT_HPP_INCLUDED" variable (:constant-flag t) nil [56 94])
+            ("boost/smart_ptr/detail/atomic_count.hpp" include (:system-flag t) nil [510 560]))          
+      :file "atomic_count.hpp"
+      :pointmax 619
+      :fsize 618
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_DETAIL_ATOMIC_COUNT_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_DETAIL_SP_TYPEINFO_HPP_INCLUDED" variable (:constant-flag t) nil [55 92])
+            ("boost/core/typeinfo.hpp" include (:system-flag t) nil [486 520])
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("sp_typeinfo" type
+                               (:typedef ("boost::core::typeinfo" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [561 603]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [541 606]))                  
+                :type "namespace")
+                nil [522 629])
+            ("BOOST_SP_TYPEID" variable (:constant-flag t) nil [658 673]))          
+      :file "sp_typeinfo.hpp"
+      :pointmax 756
+      :fsize 755
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SP_TYPEID" (spp-arg-list ("T") 673 . 676) . ((symbol "BOOST_CORE_TYPEID" 677 . 694) (semantic-list "(T)" 694 . 697)))
+          ("BOOST_DETAIL_SP_TYPEINFO_HPP_INCLUDED")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_DETAIL_CONTAINER_FWD_HPP" variable (:constant-flag t) nil [347 377])
+            ("boost/config.hpp" include (:system-flag t) nil [472 499])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [500 538])
+            ("BOOST_DETAIL_NO_CONTAINER_FWD" variable (:constant-flag t) nil [3356 3385])
+            ("deque" include (:system-flag t) nil [3549 3565])
+            ("list" include (:system-flag t) nil [3566 3581])
+            ("vector" include (:system-flag t) nil [3582 3599])
+            ("map" include (:system-flag t) nil [3600 3614])
+            ("set" include (:system-flag t) nil [3615 3629])
+            ("bitset" include (:system-flag t) nil [3630 3647])
+            ("string" include (:system-flag t) nil [3648 3665])
+            ("complex" include (:system-flag t) nil [3666 3684]))          
+      :file "container_fwd.hpp"
+      :pointmax 5161
+      :fsize 5160
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax '((semantic-list 3508 . 3547) (symbol 3501 . 3508) (punctuation 3500 . 3501))
+      :lexical-table 
+        '(("BOOST_DETAIL_NO_CONTAINER_FWD")
+          ("BOOST_DETAIL_CONTAINER_FWD_HPP")
+          )
+))
+  :file "!usr!local!Cellar!boost!1.65.1!include!boost!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

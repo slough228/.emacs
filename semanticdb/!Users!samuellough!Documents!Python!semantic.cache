@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("sets" include nil nil [19 39])
+            ("random" include nil nil [40 53])
+            ("print" code nil nil [56 1485])
+            ("names" variable nil nil [1488 1547])
+            ("invalid_pairs" variable nil nil [1548 1617])
+            ("ok" variable nil nil [1619 1629])
+            ("while" code nil nil [1630 2359]))          
+      :file "Christmas.py"
+      :pointmax 2359
+      :fsize 2358
+      :lastmodtime '(23035 5865 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!Python!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

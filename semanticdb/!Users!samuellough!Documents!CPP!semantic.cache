@@ -1,0 +1,144 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [23 42])
+            ("string" include (:system-flag t) nil [43 60])
+            ("list" include (:system-flag t) nil [61 76])
+            ("sstream" include (:system-flag t) nil [77 95])
+            ("vector" include (:system-flag t) nil [96 113])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [114 134])
+            ("f" function
+               (:prototype-flag t
+                :type "void")
+                nil [136 145])
+            ("m2" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("s1" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [154 165])
+                    ("s2" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [166 177]))                  
+                :type "void")
+                nil [146 178])
+            ("m3" function
+               (:prototype-flag t
+                :type "void")
+                nil [179 189])
+            ("h" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [197 203]))                  
+                :type "void")
+                nil [190 204])
+            ("Entry" type
+               (:members 
+                  ( ("name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [225 237])
+                    ("number" variable (:type "int") (reparse-symbol classsubparts) [242 253]))                  
+                :type "struct")
+                nil [206 256])
+            ("main" function (:type "int") nil [259 1185])
+            ("f" function (:type "void") nil [1187 1257])
+            ("h" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1266 1272]))                  
+                :type "void")
+                nil [1259 1406])
+            ("h2" function
+               (:arguments 
+                  ( ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1418 1424]))                  
+                :type "void")
+                nil [1409 1473])
+            ("name" variable
+               (:default-value "\"samuel lough\""
+                :type ("string" type (:type "class") nil nil))
+                nil [1477 1506])
+            ("m2" function
+               (:arguments 
+                  ( ("s1" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1516 1527])
+                    ("s2" variable
+                       (:reference 1
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1528 1539]))                  
+                :type "void")
+                nil [1508 1681])
+            ("m3" function (:type "void") nil [1683 1790]))          
+      :file "helloworld.cpp"
+      :pointmax 1791
+      :fsize 1790
+      :lastmodtime '(22994 18139 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("vector" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [39 59])
+            ("main" function (:type "int") nil [62 415]))          
+      :file "vectors.cpp"
+      :pointmax 416
+      :fsize 415
+      :lastmodtime '(22988 3636 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string" include (:system-flag t) nil [20 37])
+            ("iostream" include (:system-flag t) nil [38 57])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [59 79])
+            ("main" function (:type "int") nil [81 473]))          
+      :file "stringplay.cpp"
+      :pointmax 474
+      :fsize 473
+      :lastmodtime '(23027 9977 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("strings.h" include (:system-flag t) nil [1 21])
+            ("iostream" include (:system-flag t) nil [22 41])
+            ("main" function (:type "int") nil [43 333]))          
+      :file "unsafeconverstions.cpp"
+      :pointmax 334
+      :fsize 333
+      :lastmodtime '(23027 11459 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("strings.h" include (:system-flag t) nil [1 21])
+            ("iostream" include (:system-flag t) nil [22 41])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [44 64])
+            ("main" function (:type "int") nil [66 648]))          
+      :file "letter.cpp"
+      :pointmax 649
+      :fsize 647
+      :lastmodtime '(23027 12138 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!CPP!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("fcntl.h" include (:system-flag t) nil [60 78])
+            ("termios.h" include (:system-flag t) nil [79 99])
+            ("string.h" include (:system-flag t) nil [100 119])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [157 166])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [167 179]))                  
+                :type "int")
+                nil [148 1974])
+            ("close" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tty_fd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1964 1971]))                  
+                :type "int")
+                nil [1958 1972]))          
+      :file "termiostty.c"
+      :pointmax 1975
+      :fsize 1968
+      :lastmodtime '(23008 48357 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

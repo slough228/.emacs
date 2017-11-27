@@ -1,0 +1,19 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-automake-mode
+      :tags 
+        '( ("AUTOMAKE_OPTIONS" variable (:default-value ("subdir-objects")) nil [1 35])
+            ("info_TEXINFOS" variable (:default-value ("grub.texi" "grub-dev.texi")) nil [82 122])
+            ("grub_TEXINFOS" variable (:default-value ("fdl.texi")) nil [122 147]))          
+      :file "Makefile.am"
+      :pointmax 149
+      :fsize 148
+      :lastmodtime '(19860 42171 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Downloads!grub-1.99!docs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("elfsh.h" include nil nil [150 168])
+            ("esh_setup_quit_msg" function (:type "void") nil [219 395])
+            ("esh_create_prompt" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [467 477])
+                    ("size" variable (:type ("u_int" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [478 489]))                  
+                :type "void")
+                nil [443 1081])
+            ("esh_setup_prompt" function (:type "void") nil [1100 1167])
+            ("esh_banner_print" function (:type "void") nil [1206 1733])
+            ("esh_main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [1821 1828])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1829 1839]))                  
+                :type "int")
+                nil [1807 2144])
+            ("main" function
+               (:arguments 
+                  ( ("ac" variable (:type "int") (reparse-symbol arg-sub-list) [2230 2237])
+                    ("av" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2238 2248]))                  
+                :type "int")
+                nil [2220 2281]))          
+      :file "main.c"
+      :pointmax 2285
+      :fsize 2284
+      :lastmodtime '(23060 20686 301350 846000)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!eresi!elfsh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

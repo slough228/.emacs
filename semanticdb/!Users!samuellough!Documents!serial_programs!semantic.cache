@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("fcntl.h" include (:system-flag t) nil [40 58])
+            ("termios.h" include (:system-flag t) nil [59 79])
+            ("string.h" include (:system-flag t) nil [80 99])
+            ("unistd.h" include (:system-flag t) nil [100 119])
+            ("errno.h" include (:system-flag t) nil [120 138])
+            ("PORT" variable (:constant-flag t) nil [148 152])
+            ("errno" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [177 194])
+            ("init_port" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [210 217])
+                    ("ptr_to_term" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [218 247]))                  
+                :type "int")
+                nil [196 2491])
+            ("serial_read" function
+               (:arguments 
+                  ( ("ptr_to_term" variable
+                       (:pointer 1
+                        :type ("termios" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2509 2538])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [2539 2546]))                  
+                :type "int")
+                nil [2493 2778])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [2790 2799])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2800 2812]))                  
+                :type "int")
+                nil [2781 3071]))          
+      :file "serial_read.c"
+      :pointmax 3072
+      :fsize 3071
+      :lastmodtime '(23012 55508 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("PORT" . ((string "\"/dev/cu.lpss/serial1\"" 153 . 175)))
+          )
+))
+  :file "!Users!samuellough!Documents!serial_programs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,92 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("server_thr" variable
+               (:pointer 1
+                :dereference 1
+                :type ("pthread_t" type (:type "class") nil nil))
+                nil [28 70])
+            ("udpserve_thread_pointer" variable (:type ("pthread_t" type (:type "class") nil nil)) nil [75 109])
+            ("tcpserve_thread_pointer" variable (:type ("pthread_t" type (:type "class") nil nil)) nil [114 148])
+            ("rc_u" variable
+               (:default-value "0"
+                :type "int")
+                nil [153 166])
+            ("rc_t" variable
+               (:default-value "0"
+                :type "int")
+                nil [171 184])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [189 221])
+            ("rc_u" variable
+               (:default-value "pthread_create(&udpserve_thread_pointer, NULL, udpserve(), NULL)"
+                :type "int")
+                nil [227 299])
+            ("printf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("rc_u" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [326 331]))                  
+                :type "int")
+                nil [304 332])
+            ("fprintf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stderr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [439 446]))                  
+                :type "int")
+                nil [431 464])
+            ("fflush" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("stderr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [476 483]))                  
+                :type "int")
+                nil [469 484])
+            ("rc_t" variable
+               (:default-value "pthread_create(&tcpserve_thread_pointer, NULL, tcpserve(), NULL)"
+                :type "int")
+                nil [491 563])
+            ("pthread_join" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("udpserve_thread_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [677 701])
+                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [702 707]))                  
+                :type "int")
+                nil [664 708])
+            ("pthread_join" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("tcpserve_thread_pointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [726 750])
+                    ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [751 756]))                  
+                :type "int")
+                nil [713 757]))          
+      :file "MAIN_BACK.c"
+      :pointmax 758
+      :fsize 757
+      :lastmodtime '(22985 2514 0 0)
+      :unmatched-syntax '((semantic-list 583 . 658) (semantic-list 571 . 582) (IF 568 . 570) (string 447 . 462) (semantic-list 351 . 426) (semantic-list 340 . 351) (IF 337 . 339) (string 311 . 324) (string 196 . 219)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ctype.h" include (:system-flag t) nil [1 19])
+            ("float.h" include (:system-flag t) nil [21 39]))          
+      :file "#temp.cpp#"
+      :pointmax 40
+      :fsize 39
+      :lastmodtime '(22989 7898 0 0)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags nil
+      :file "test.py"
+      :pointmax 1
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

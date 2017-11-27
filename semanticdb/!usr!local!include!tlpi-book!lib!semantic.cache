@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("TLPI_HDR_H" variable (:constant-flag t) nil [732 742])
+            ("sys/types.h" include (:system-flag t) nil [791 813])
+            ("stdio.h" include (:system-flag t) nil [860 878])
+            ("stdlib.h" include (:system-flag t) nil [913 932])
+            ("unistd.h" include (:system-flag t) nil [1062 1081])
+            ("errno.h" include (:system-flag t) nil [1125 1143])
+            ("string.h" include (:system-flag t) nil [1198 1217])
+            ("get_num.h" include nil nil [1269 1289])
+            ("error_functions.h" include nil nil [1403 1431])
+            ("Boolean" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("FALSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1493 1499])
+                          ("TRUE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1500 1506]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1478 1515])
+            ("min" variable (:constant-flag t) nil [1525 1528])
+            ("max" variable (:constant-flag t) nil [1566 1569]))          
+      :file "tlpi_hdr.h"
+      :pointmax 1607
+      :fsize 1606
+      :lastmodtime '(22994 6128 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TLPI_HDR_H")
+          ("max" (spp-arg-list ("m" "n") 1569 . 1574) . ((semantic-list "((m) > (n) ? (m) : (n))" 1575 . 1598)))
+          ("min" (spp-arg-list ("m" "n") 1528 . 1533) . ((semantic-list "((m) < (n) ? (m) : (n))" 1534 . 1557)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "get_num.h"
+      :fsize 1264
+      :lastmodtime '(22994 6128 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "error_functions.h"
+      :fsize 1417
+      :lastmodtime '(22994 6128 0 0)))
+  :file "!usr!local!include!tlpi-book!lib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

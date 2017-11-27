@@ -1,0 +1,819 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SYSTEM_ERROR_CODE_HPP" variable (:constant-flag t) nil [433 460])
+            ("boost/system/config.hpp" include (:system-flag t) nil [462 496])
+            ("boost/cstdint.hpp" include (:system-flag t) nil [497 525])
+            ("boost/assert.hpp" include (:system-flag t) nil [526 553])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [554 586])
+            ("boost/utility/enable_if.hpp" include (:system-flag t) nil [587 625])
+            ("ostream" include (:system-flag t) nil [626 644])
+            ("string" include (:system-flag t) nil [645 662])
+            ("stdexcept" include (:system-flag t) nil [663 683])
+            ("functional" include (:system-flag t) nil [684 705])
+            ("boost/cerrno.hpp" include (:system-flag t) nil [758 785])
+            ("system_error" include (:system-flag t) nil [958 981])
+            ("boost/config/abi_prefix.hpp" include (:system-flag t) nil [990 1028])
+            ("BOOST_SYSTEM_NOEXCEPT" variable (:constant-flag t) nil [1097 1118])
+            ("boost" type
+               (:members 
+                  ( ("system" type
+                       (:members 
+                          ( ("error_code" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1188 1205])
+                            ("error_condition" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1260 1282])
+                            ("is_error_code_enum" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1553 1585]))                                  )
+                                (reparse-symbol namespacesubparts) [1501 1588])
+                            ("is_error_condition_enum" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("value" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1651 1683]))                                  )
+                                (reparse-symbol namespacesubparts) [1594 1686])
+                            ("errc" type
+                               (:members 
+                                  ( ("errc_t" type
+                                       (:members 
+                                          ( ("success" variable
+                                               (:constant-flag t
+                                                :default-value (1849 1850)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1839 1850])
+                                            ("address_family_not_supported" variable
+                                               (:constant-flag t
+                                                :default-value (1891 1903)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1860 1903])
+                                            ("address_in_use" variable
+                                               (:constant-flag t
+                                                :default-value (1930 1940)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1913 1940])
+                                            ("address_not_available" variable
+                                               (:constant-flag t
+                                                :default-value (1974 1987)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1950 1987])
+                                            ("already_connected" variable
+                                               (:constant-flag t
+                                                :default-value (2017 2024)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [1997 2024])
+                                            ("argument_list_too_long" variable
+                                               (:constant-flag t
+                                                :default-value (2059 2064)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2034 2064])
+                                            ("argument_out_of_domain" variable
+                                               (:constant-flag t
+                                                :default-value (2099 2103)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2074 2103])
+                                            ("bad_address" variable
+                                               (:constant-flag t
+                                                :default-value (2127 2133)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2113 2133])
+                                            ("bad_file_descriptor" variable
+                                               (:constant-flag t
+                                                :default-value (2165 2170)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2143 2170])
+                                            ("bad_message" variable
+                                               (:constant-flag t
+                                                :default-value (2194 2201)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2180 2201])
+                                            ("broken_pipe" variable
+                                               (:constant-flag t
+                                                :default-value (2225 2230)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2211 2230])
+                                            ("connection_aborted" variable
+                                               (:constant-flag t
+                                                :default-value (2261 2273)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2240 2273])
+                                            ("connection_already_in_progress" variable
+                                               (:constant-flag t
+                                                :default-value (2316 2324)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2283 2324])
+                                            ("connection_refused" variable
+                                               (:constant-flag t
+                                                :default-value (2355 2367)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2334 2367])
+                                            ("connection_reset" variable
+                                               (:constant-flag t
+                                                :default-value (2396 2406)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2377 2406])
+                                            ("cross_device_link" variable
+                                               (:constant-flag t
+                                                :default-value (2436 2441)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2416 2441])
+                                            ("destination_address_required" variable
+                                               (:constant-flag t
+                                                :default-value (2482 2494)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2451 2494])
+                                            ("device_or_resource_busy" variable
+                                               (:constant-flag t
+                                                :default-value (2530 2535)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2504 2535])
+                                            ("directory_not_empty" variable
+                                               (:constant-flag t
+                                                :default-value (2567 2576)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2545 2576])
+                                            ("executable_format_error" variable
+                                               (:constant-flag t
+                                                :default-value (2612 2619)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2586 2619])
+                                            ("file_exists" variable
+                                               (:constant-flag t
+                                                :default-value (2643 2649)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2629 2649])
+                                            ("file_too_large" variable
+                                               (:constant-flag t
+                                                :default-value (2676 2681)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2659 2681])
+                                            ("filename_too_long" variable
+                                               (:constant-flag t
+                                                :default-value (2711 2723)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2691 2723])
+                                            ("function_not_supported" variable
+                                               (:constant-flag t
+                                                :default-value (2758 2764)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2733 2764])
+                                            ("host_unreachable" variable
+                                               (:constant-flag t
+                                                :default-value (2793 2805)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2774 2805])
+                                            ("identifier_removed" variable
+                                               (:constant-flag t
+                                                :default-value (2836 2841)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2815 2841])
+                                            ("illegal_byte_sequence" variable
+                                               (:constant-flag t
+                                                :default-value (2875 2881)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2851 2881])
+                                            ("inappropriate_io_control_operation" variable
+                                               (:constant-flag t
+                                                :default-value (2928 2934)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2891 2934])
+                                            ("interrupted" variable
+                                               (:constant-flag t
+                                                :default-value (2958 2963)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2944 2963])
+                                            ("invalid_argument" variable
+                                               (:constant-flag t
+                                                :default-value (2992 2998)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [2973 2998])
+                                            ("invalid_seek" variable
+                                               (:constant-flag t
+                                                :default-value (3023 3029)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3008 3029])
+                                            ("io_error" variable
+                                               (:constant-flag t
+                                                :default-value (3050 3053)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3039 3053])
+                                            ("is_a_directory" variable
+                                               (:constant-flag t
+                                                :default-value (3080 3086)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3063 3086])
+                                            ("message_size" variable
+                                               (:constant-flag t
+                                                :default-value (3111 3119)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3096 3119])
+                                            ("network_down" variable
+                                               (:constant-flag t
+                                                :default-value (3144 3152)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3129 3152])
+                                            ("network_reset" variable
+                                               (:constant-flag t
+                                                :default-value (3178 3187)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3162 3187])
+                                            ("network_unreachable" variable
+                                               (:constant-flag t
+                                                :default-value (3219 3230)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3197 3230])
+                                            ("no_buffer_space" variable
+                                               (:constant-flag t
+                                                :default-value (3258 3265)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3240 3265])
+                                            ("no_child_process" variable
+                                               (:constant-flag t
+                                                :default-value (3294 3300)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3275 3300])
+                                            ("no_link" variable
+                                               (:constant-flag t
+                                                :default-value (3320 3327)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3310 3327])
+                                            ("no_lock_available" variable
+                                               (:constant-flag t
+                                                :default-value (3357 3363)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3337 3363])
+                                            ("no_message_available" variable
+                                               (:constant-flag t
+                                                :default-value (3396 3403)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3373 3403])
+                                            ("no_message" variable
+                                               (:constant-flag t
+                                                :default-value (3426 3432)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3413 3432])
+                                            ("no_protocol_option" variable
+                                               (:constant-flag t
+                                                :default-value (3463 3474)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3442 3474])
+                                            ("no_space_on_device" variable
+                                               (:constant-flag t
+                                                :default-value (3505 3511)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3484 3511])
+                                            ("no_stream_resources" variable
+                                               (:constant-flag t
+                                                :default-value (3543 3548)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3521 3548])
+                                            ("no_such_device_or_address" variable
+                                               (:constant-flag t
+                                                :default-value (3586 3591)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3558 3591])
+                                            ("no_such_device" variable
+                                               (:constant-flag t
+                                                :default-value (3618 3624)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3601 3624])
+                                            ("no_such_file_or_directory" variable
+                                               (:constant-flag t
+                                                :default-value (3662 3668)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3634 3668])
+                                            ("no_such_process" variable
+                                               (:constant-flag t
+                                                :default-value (3696 3701)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3678 3701])
+                                            ("not_a_directory" variable
+                                               (:constant-flag t
+                                                :default-value (3729 3736)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3711 3736])
+                                            ("not_a_socket" variable
+                                               (:constant-flag t
+                                                :default-value (3761 3769)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3746 3769])
+                                            ("not_a_stream" variable
+                                               (:constant-flag t
+                                                :default-value (3794 3800)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3779 3800])
+                                            ("not_connected" variable
+                                               (:constant-flag t
+                                                :default-value (3826 3834)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3810 3834])
+                                            ("not_enough_memory" variable
+                                               (:constant-flag t
+                                                :default-value (3864 3870)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3844 3870])
+                                            ("not_supported" variable
+                                               (:constant-flag t
+                                                :default-value (3896 3903)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3880 3903])
+                                            ("operation_canceled" variable
+                                               (:constant-flag t
+                                                :default-value (3934 3943)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3913 3943])
+                                            ("operation_in_progress" variable
+                                               (:constant-flag t
+                                                :default-value (3977 3988)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3953 3988])
+                                            ("operation_not_permitted" variable
+                                               (:constant-flag t
+                                                :default-value (4024 4029)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [3998 4029])
+                                            ("operation_not_supported" variable
+                                               (:constant-flag t
+                                                :default-value (4065 4075)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4039 4075])
+                                            ("operation_would_block" variable
+                                               (:constant-flag t
+                                                :default-value (4109 4120)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4085 4120])
+                                            ("owner_dead" variable
+                                               (:constant-flag t
+                                                :default-value (4143 4153)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4130 4153])
+                                            ("permission_denied" variable
+                                               (:constant-flag t
+                                                :default-value (4183 4189)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4163 4189])
+                                            ("protocol_error" variable
+                                               (:constant-flag t
+                                                :default-value (4216 4222)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4199 4222])
+                                            ("protocol_not_supported" variable
+                                               (:constant-flag t
+                                                :default-value (4257 4272)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4232 4272])
+                                            ("read_only_file_system" variable
+                                               (:constant-flag t
+                                                :default-value (4306 4311)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4282 4311])
+                                            ("resource_deadlock_would_occur" variable
+                                               (:constant-flag t
+                                                :default-value (4353 4360)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4321 4360])
+                                            ("resource_unavailable_try_again" variable
+                                               (:constant-flag t
+                                                :default-value (4403 4409)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4370 4409])
+                                            ("result_out_of_range" variable
+                                               (:constant-flag t
+                                                :default-value (4441 4447)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4419 4447])
+                                            ("state_not_recoverable" variable
+                                               (:constant-flag t
+                                                :default-value (4481 4496)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4457 4496])
+                                            ("stream_timeout" variable
+                                               (:constant-flag t
+                                                :default-value (4523 4528)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4506 4528])
+                                            ("text_file_busy" variable
+                                               (:constant-flag t
+                                                :default-value (4555 4562)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4538 4562])
+                                            ("timed_out" variable
+                                               (:constant-flag t
+                                                :default-value (4584 4593)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4572 4593])
+                                            ("too_many_files_open_in_system" variable
+                                               (:constant-flag t
+                                                :default-value (4635 4641)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4603 4641])
+                                            ("too_many_files_open" variable
+                                               (:constant-flag t
+                                                :default-value (4673 4679)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4651 4679])
+                                            ("too_many_links" variable
+                                               (:constant-flag t
+                                                :default-value (4706 4712)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4689 4712])
+                                            ("too_many_symbolic_link_levels" variable
+                                               (:constant-flag t
+                                                :default-value (4754 4759)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4722 4759])
+                                            ("value_too_large" variable
+                                               (:constant-flag t
+                                                :default-value (4787 4796)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4769 4796])
+                                            ("wrong_protocol_type" variable
+                                               (:constant-flag t
+                                                :default-value (4828 4838)
+                                                :type "int")
+                                                (reparse-symbol enumsubparts) [4806 4838]))                                          
+                                        :type "enum")
+                                        (reparse-symbol namespacesubparts) [1811 4847]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1784 4854])
+                            ("posix" type
+                               (:kind alias
+                                :members 
+                                  ( ("errc" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [4914 4937])
+                            ("posix_error" type
+                               (:kind alias
+                                :members 
+                                  ( ("errc" type (:type "namespace") nil nil))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [4942 4971])
+                            ("is_error_condition_enum" type
+                               (:type "struct"
+                                :members 
+                                  ( ("value" variable
+                                       (:typemodifiers ("static")
+                                        :constant-flag t
+                                        :default-value "true"
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5049 5080]))                                  
+                                :template-specifier 
+                                  ( ("errc::errc_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4985 5083])
+                            ("error_category" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [6522 6543])
+                            ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol namespacesubparts) [6896 6918])
+                            ("BOOST_NOEXCEPT" variable (:type "int") (reparse-symbol namespacesubparts) [6984 7006])
+                            ("get_system_category" function
+                               (:typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("error_category" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7145 7227])
+                            ("get_generic_category" function
+                               (:typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("error_category" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7232 7316])
+                            ("get_posix_category" function
+                               (:typemodifiers ("inline")
+                                :constant-flag t
+                                :type ("error_category" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7321 7403])
+                            ("BOOST_ATTRIBUTE_UNUSED" variable
+                               (:default-value "generic_category()"
+                                :type ("posix_category" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7439 7504])
+                            ("BOOST_ATTRIBUTE_UNUSED" variable
+                               (:default-value "generic_category()"
+                                :type ("errno_ecat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7540 7605])
+                            ("BOOST_ATTRIBUTE_UNUSED" variable
+                               (:default-value "system_category()"
+                                :type ("native_ecat" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7641 7705])
+                            ("error_category" type
+                               (:superclasses 
+                                  ( ("noncopyable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [7893 7901])
+                                    ("std_category" type
+                                       (:superclasses 
+                                          ( ("std::error_category" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [7970 7978])
+                                            ("pc_" variable
+                                               (:pointer 1
+                                                :type ("boost::system::error_category" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7988 8030])
+                                            ("public" label nil (reparse-symbol classsubparts) [8038 8045])
+                                            ("std_category" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("pc" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("boost::system::error_category" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8078 8120]))                                                  
+                                                :type ("std_category" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8064 8151])
+                                            ("message" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("virtual")
+                                                :arguments 
+                                                  ( ("ev" variable (:type "int") (reparse-symbol arg-sub-list) [8298 8306]))                                                  
+                                                :type ("std::string" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8269 8369])
+                                            ("BOOST_NOEXCEPT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [8442 8473])
+                                            ("BOOST_NOEXCEPT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [8558 8589])
+                                            ("BOOST_NOEXCEPT" variable
+                                               (:constant-flag t
+                                                :type "int")
+                                                (reparse-symbol classsubparts) [8669 8700]))                                          
+                                        :type "class")
+                                        (reparse-symbol classsubparts) [7909 8709])
+                                    ("std_cat_" variable (:type ("std_category" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8717 8739])
+                                    ("public" label nil (reparse-symbol classsubparts) [8745 8752])
+                                    ("std_cat_" function
+                                       (:arguments 
+                                          ( ("" variable (:type ("this" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8810 8816]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8800 8819])
+                                    ("public" label nil (reparse-symbol classsubparts) [10257 10264])
+                                    ("error_category" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [10271 10298])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :default-value "0"
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10338 10370])
+                                    ("message" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :arguments 
+                                          ( ("ev" variable (:type "int") (reparse-symbol arg-sub-list) [10411 10419]))                                          
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [10377 10430])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10503 10540])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10680 10717])
+                                    ("BOOST_NOEXCEPT" variable
+                                       (:constant-flag t
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10852 10881]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [7800 11259])
+                            ("error_condition" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [11472 11479])
+                                    ("m_val" function
+                                       (:constructor-flag t
+                                        :type ("error_condition" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11552 11591])
+                                    ("m_val" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("val" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11691 11695]))                                          
+                                        :type ("error_condition" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [11685 11711])
+                                    ("message" function
+                                       (:methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [12770 12846])
+                                    ("unspecified_bool_type" function
+                                       (:prototype-flag t
+                                        :function-pointer t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12862 12894])
+                                    ("unspecified_bool_true" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12901 12939])
+                                    ("private" label nil (reparse-symbol classsubparts) [14165 14173])
+                                    ("m_val" variable (:type "int") (reparse-symbol classsubparts) [14180 14210])
+                                    ("m_cat" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("error_category" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14217 14247]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [11440 14255])
+                            ("error_code" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [14797 14804])
+                                    ("m_val" function
+                                       (:constructor-flag t
+                                        :type ("error_code" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14872 14910])
+                                    ("m_val" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("val" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15005 15009]))                                          
+                                        :type ("error_code" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [14999 15025])
+                                    ("message" function
+                                       (:methodconst-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [16154 16230])
+                                    ("unspecified_bool_type" function
+                                       (:prototype-flag t
+                                        :function-pointer t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16246 16278])
+                                    ("unspecified_bool_true" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [16285 16323])
+                                    ("private" label nil (reparse-symbol classsubparts) [17523 17531])
+                                    ("m_val" variable (:type "int") (reparse-symbol classsubparts) [17538 17568])
+                                    ("m_cat" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("error_category" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [17575 17605]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [14770 17613])
+                            ("throws" variable
+                               (:typemodifiers ("extern")
+                                :type ("error_code" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [17739 17764]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1162 18014])
+                    ("detail" type
+                       (:members 
+                          ( ("throws" function
+                               (:pointer 1
+                                :typemodifiers ("inline")
+                                :type ("system::error_code" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [18058 18108]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [18039 18110])
+                    ("throws" function
+                       (:typemodifiers ("inline")
+                        :type ("system::error_code" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [18610 18680])
+                    ("system" type
+                       (:members 
+                          ( ("<<" function
+                               (:template 
+                                  ( ("charT" type (:type "class") nil nil)
+                                    ("traits" type (:type "class") nil nil))                                  
+                                :type ("std::basic_ostream" type
+                                     (:template-specifier 
+                                        ( ("charT" type nil nil nil)
+                                          ("traits" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("os" variable
+                                       (:reference 1
+                                        :type ("std::basic_ostream" type
+                                             (:template-specifier 
+                                                ( ("charT" type nil nil nil)
+                                                  ("traits" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [20242 20279])
+                                    ("ec" variable (:type ("error_code" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20280 20294]))                                  
+                                :typemodifiers ("inline")
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [20142 20378])
+                            ("hash_value" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("ec" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("error_code" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [20415 20438]))                                  
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [20384 20557])
+                            ("errc" type (:type "namespace") (reparse-symbol namespacesubparts) [20655 21019]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [18684 23936]))                  
+                :type "namespace")
+                nil [1142 23958])
+            ("boost/config/abi_suffix.hpp" include (:system-flag t) nil [23979 24017]))          
+      :file "error_code.hpp"
+      :pointmax 24183
+      :fsize 24182
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax '((semantic-list 23005 . 23923) (symbol 22986 . 23000) (CONST 22980 . 22985) (semantic-list 22926 . 22979) (symbol 22916 . 22926) (punctuation 22915 . 22916) (punctuation 22914 . 22915) (symbol 22902 . 22914) (punctuation 22901 . 22902) (punctuation 22900 . 22901) (symbol 22886 . 22900) (BOOL 22881 . 22885) (INLINE 22874 . 22880) (semantic-list 22021 . 22868) (symbol 22002 . 22016) (CONST 21996 . 22001) (semantic-list 21937 . 21995) (symbol 21927 . 21937) (punctuation 21926 . 21927) (punctuation 21925 . 21926) (symbol 21913 . 21925) (punctuation 21912 . 21913) (punctuation 21911 . 21912) (symbol 21897 . 21911) (BOOL 21892 . 21896) (INLINE 21885 . 21891) (semantic-list 21823 . 21879) (symbol 21804 . 21818) (CONST 21798 . 21803) (semantic-list 21781 . 21797) (symbol 21758 . 21781) (punctuation 21757 . 21758) (punctuation 21756 . 21757) (symbol 21744 . 21756) (punctuation 21743 . 21744) (punctuation 21742 . 21743) (symbol 21728 . 21742) (symbol 21712 . 21727) (punctuation 21711 . 21712) (punctuation 21710 . 21711) (symbol 21707 . 21710) (INLINE 21700 . 21706) (semantic-list 21578 . 21653) (symbol "BOOST_NOEXCEPT" 21552 . 21573) (CONST 21546 . 21551) (semantic-list 21497 . 21545) (symbol 21487 . 21497) (punctuation 21486 . 21487) (punctuation 21485 . 21486) (symbol 21471 . 21485) (BOOL 21466 . 21470) (semantic-list 21394 . 21460) (symbol "BOOST_NOEXCEPT" 21368 . 21389) (CONST 21362 . 21367) (semantic-list 21308 . 21361) (symbol 21298 . 21308) (punctuation 21297 . 21298) (punctuation 21296 . 21297) (symbol 21282 . 21296) (BOOL 21277 . 21281) (semantic-list 21221 . 21271) (symbol "BOOST_NOEXCEPT" 21195 . 21216) (CONST 21183 . 21188) (semantic-list 21172 . 21182) (symbol 21149 . 21172) (punctuation 21148 . 21149) (punctuation 21147 . 21148) (symbol 21133 . 21147) (symbol 21117 . 21132) (semantic-list 20961 . 21013) (symbol "BOOST_NOEXCEPT" 20931 . 20952) (semantic-list 20918 . 20930) (symbol 20898 . 20918) (symbol 20882 . 20897) (INLINE 20875 . 20881) (semantic-list 20789 . 20836) (symbol "BOOST_NOEXCEPT" 20759 . 20780) (semantic-list 20746 . 20758) (symbol 20731 . 20746) (symbol 20720 . 20730) (INLINE 20713 . 20719) (semantic-list 20022 . 20057) (symbol "BOOST_NOEXCEPT" 19996 . 20017) (semantic-list 19912 . 19995) (punctuation 19911 . 19912) (punctuation 19910 . 19911) (OPERATOR 19902 . 19910) (BOOL 19897 . 19901) (INLINE 19890 . 19896) (semantic-list 19739 . 19884) (symbol "BOOST_NOEXCEPT" 19713 . 19734) (semantic-list 19622 . 19712) (punctuation 19621 . 19622) (punctuation 19620 . 19621) (OPERATOR 19612 . 19620) (BOOL 19607 . 19611) (INLINE 19600 . 19606) (semantic-list 19559 . 19594) (symbol "BOOST_NOEXCEPT" 19533 . 19554) (semantic-list 19449 . 19532) (punctuation 19448 . 19449) (punctuation 19447 . 19448) (OPERATOR 19439 . 19447) (BOOL 19434 . 19438) (INLINE 19427 . 19433) (semantic-list 19276 . 19421) (symbol "BOOST_NOEXCEPT" 19250 . 19271) (semantic-list 19159 . 19249) (punctuation 19158 . 19159) (punctuation 19157 . 19158) (OPERATOR 19149 . 19157) (BOOL 19144 . 19148) (INLINE 19137 . 19143) (semantic-list 19096 . 19131) (symbol "BOOST_NOEXCEPT" 19070 . 19091) (semantic-list 18981 . 19069) (punctuation 18980 . 18981) (punctuation 18979 . 18980) (OPERATOR 18971 . 18979) (BOOL 18966 . 18970) (INLINE 18959 . 18965) (semantic-list 18918 . 18953) (symbol "BOOST_NOEXCEPT" 18892 . 18913) (semantic-list 18813 . 18891) (punctuation 18812 . 18813) (punctuation 18811 . 18812) (OPERATOR 18803 . 18811) (BOOL 18798 . 18802) (INLINE 18791 . 18797) (symbol 17721 . 17738) (semantic-list 17445 . 17509) (symbol "BOOST_NOEXCEPT" 17417 . 17438) (CONST 17411 . 17416) (semantic-list 17408 . 17410) (symbol 17397 . 17407) (punctuation 17396 . 17397) (punctuation 17395 . 17396) (symbol 17392 . 17395) (OPERATOR 17383 . 17391) (semantic-list 17224 . 17334) (symbol "BOOST_NOEXCEPT" 17082 . 17103) (semantic-list 16995 . 17081) (punctuation 16994 . 16995) (OPERATOR 16986 . 16994) (BOOL 16981 . 16985) (FRIEND 16974 . 16980) (INLINE 16967 . 16973) (semantic-list 16885 . 16959) (symbol "BOOST_NOEXCEPT" 16743 . 16764) (semantic-list 16655 . 16742) (punctuation 16654 . 16655) (punctuation 16653 . 16654) (OPERATOR 16645 . 16653) (BOOL 16640 . 16644) (FRIEND 16633 . 16639) (INLINE 16626 . 16632) (semantic-list 16560 . 16596) (symbol "BOOST_NOEXCEPT" 16512 . 16533) (CONST 16505 . 16510) (semantic-list 16502 . 16504) (punctuation 16501 . 16502) (OPERATOR 16493 . 16501) (BOOL 16488 . 16492) (semantic-list 16416 . 16480) (symbol "BOOST_NOEXCEPT" 16371 . 16392) (CONST 16364 . 16369) (semantic-list 16361 . 16363) (symbol 16340 . 16361) (OPERATOR 16331 . 16339) (TYPEDEF 16238 . 16245) (semantic-list 16096 . 16147) (symbol "BOOST_NOEXCEPT" 16066 . 16087) (CONST 16060 . 16065) (semantic-list 16057 . 16059) (symbol 16034 . 16057) (symbol 16010 . 16025) (semantic-list 15985 . 16003) (symbol "BOOST_NOEXCEPT" 15963 . 15984) (CONST 15957 . 15962) (semantic-list 15954 . 15956) (symbol 15946 . 15954) (punctuation 15943 . 15944) (symbol 15928 . 15942) (CONST 15922 . 15927) (semantic-list 15898 . 15915) (symbol "BOOST_NOEXCEPT" 15874 . 15895) (CONST 15867 . 15872) (semantic-list 15864 . 15866) (symbol 15859 . 15864) (INT 15835 . 15838) (semantic-list 15743 . 15807) (symbol "BOOST_NOEXCEPT" 15715 . 15736) (semantic-list 15712 . 15714) (symbol 15707 . 15712) (VOID 15702 . 15706) (semantic-list 15625 . 15694) (symbol "BOOST_NOEXCEPT" 15597 . 15618) (semantic-list 15575 . 15596) (punctuation 15574 . 15575) (OPERATOR 15566 . 15574) (punctuation 15554 . 15555) (symbol 15549 . 15553) (punctuation 15548 . 15549) (punctuation 15547 . 15548) (punctuation 15546 . 15547) (symbol 15536 . 15546) (punctuation 15534 . 15535) (punctuation 15533 . 15534) (symbol 15520 . 15533) (punctuation 15519 . 15520) (symbol 15501 . 15519) (punctuation 15500 . 15501) (symbol 15491 . 15500) (punctuation 15490 . 15491) (punctuation 15489 . 15490) (symbol 15484 . 15489) (TYPENAME 15475 . 15483) (punctuation 15465 . 15466) (symbol 15452 . 15465) (TYPENAME 15443 . 15451) (punctuation 15442 . 15443) (TEMPLATE 15434 . 15442) (semantic-list 15374 . 15426) (symbol "BOOST_NOEXCEPT" 15346 . 15367) (semantic-list 15306 . 15345) (symbol 15300 . 15306) (VOID 15295 . 15299) (semantic-list 15222 . 15267) (symbol "BOOST_NOEXCEPT" 15194 . 15215) (semantic-list 15082 . 15183) (symbol 15072 . 15082) (punctuation 15062 . 15063) (symbol 15049 . 15062) (CLASS 15043 . 15048) (punctuation 15042 . 15043) (TEMPLATE 15033 . 15041) (punctuation 14997 . 14998) (symbol "BOOST_NOEXCEPT" 14967 . 14988) (semantic-list 14927 . 14966) (symbol 14917 . 14927) (number 14878 . 14879) (punctuation 14870 . 14871) (symbol "BOOST_NOEXCEPT" 14848 . 14869) (semantic-list 14845 . 14847) (symbol 14835 . 14845) (semantic-list 14082 . 14151) (symbol "BOOST_NOEXCEPT" 14054 . 14075) (CONST 14048 . 14053) (semantic-list 14045 . 14047) (symbol 14029 . 14044) (punctuation 14028 . 14029) (punctuation 14027 . 14028) (symbol 14024 . 14027) (OPERATOR 14015 . 14023) (semantic-list 13856 . 13966) (symbol "BOOST_NOEXCEPT" 13714 . 13735) (semantic-list 13617 . 13713) (punctuation 13616 . 13617) (OPERATOR 13608 . 13616) (BOOL 13603 . 13607) (FRIEND 13596 . 13602) (INLINE 13589 . 13595) (semantic-list 13507 . 13581) (symbol "BOOST_NOEXCEPT" 13479 . 13500) (semantic-list 13381 . 13478) (punctuation 13380 . 13381) (punctuation 13379 . 13380) (OPERATOR 13371 . 13379) (BOOL 13366 . 13370) (FRIEND 13359 . 13365) (INLINE 13352 . 13358) (semantic-list 13176 . 13212) (symbol "BOOST_NOEXCEPT" 13127 . 13148) (CONST 13121 . 13126) (semantic-list 13118 . 13120) (punctuation 13117 . 13118) (OPERATOR 13109 . 13117) (BOOL 13104 . 13108) (semantic-list 13032 . 13096) (symbol "BOOST_NOEXCEPT" 12986 . 13007) (CONST 12980 . 12985) (semantic-list 12977 . 12979) (symbol 12956 . 12977) (OPERATOR 12947 . 12955) (TYPEDEF 12854 . 12861) (semantic-list 12745 . 12763) (symbol "BOOST_NOEXCEPT" 12723 . 12744) (CONST 12717 . 12722) (semantic-list 12714 . 12716) (symbol 12706 . 12714) (punctuation 12703 . 12704) (symbol 12688 . 12702) (CONST 12682 . 12687) (semantic-list 12658 . 12675) (symbol "BOOST_NOEXCEPT" 12633 . 12654) (CONST 12627 . 12632) (semantic-list 12624 . 12626) (symbol 12619 . 12624) (INT 12595 . 12598) (semantic-list 12502 . 12567) (symbol "BOOST_NOEXCEPT" 12474 . 12495) (semantic-list 12471 . 12473) (symbol 12466 . 12471) (VOID 12461 . 12465) (semantic-list 12379 . 12453) (symbol "BOOST_NOEXCEPT" 12351 . 12372) (semantic-list 12324 . 12350) (punctuation 12323 . 12324) (OPERATOR 12315 . 12323) (punctuation 12303 . 12304) (symbol 12298 . 12302) (punctuation 12297 . 12298) (punctuation 12296 . 12297) (punctuation 12295 . 12296) (symbol 12280 . 12295) (punctuation 12268 . 12269) (punctuation 12267 . 12268) (symbol 12249 . 12267) (punctuation 12248 . 12249) (symbol 12225 . 12248) (punctuation 12224 . 12225) (symbol 12215 . 12224) (punctuation 12214 . 12215) (punctuation 12213 . 12214) (symbol 12208 . 12213) (TYPENAME 12199 . 12207) (punctuation 12189 . 12190) (symbol 12171 . 12189) (TYPENAME 12162 . 12170) (punctuation 12161 . 12162) (TEMPLATE 12153 . 12161) (semantic-list 12093 . 12145) (symbol "BOOST_NOEXCEPT" 12065 . 12086) (semantic-list 12025 . 12064) (symbol 12019 . 12025) (VOID 12014 . 12018) (semantic-list 11935 . 11985) (symbol "BOOST_NOEXCEPT" 11907 . 11928) (semantic-list 11778 . 11906) (symbol 11763 . 11778) (punctuation 11753 . 11754) (symbol 11735 . 11753) (CLASS 11729 . 11734) (punctuation 11728 . 11729) (TEMPLATE 11719 . 11727) (punctuation 11683 . 11684) (symbol "BOOST_NOEXCEPT" 11653 . 11674) (semantic-list 11613 . 11652) (symbol 11598 . 11613) (number 11558 . 11559) (punctuation 11550 . 11551) (symbol "BOOST_NOEXCEPT" 11528 . 11549) (semantic-list 11525 . 11527) (symbol 11510 . 11525) (semantic-list 11192 . 11252) (symbol "BOOST_NOEXCEPT" 11162 . 11183) (CONST 11156 . 11161) (semantic-list 11125 . 11155) (punctuation 11124 . 11125) (OPERATOR 11116 . 11124) (BOOL 11111 . 11115) (semantic-list 11080 . 11104) (symbol "BOOST_NOEXCEPT" 11050 . 11071) (CONST 11044 . 11049) (semantic-list 11015 . 11043) (punctuation 11014 . 11015) (punctuation 11013 . 11014) (OPERATOR 11005 . 11013) (BOOL 11000 . 11004) (semantic-list 10969 . 10993) (symbol "BOOST_NOEXCEPT" 10939 . 10960) (CONST 10933 . 10938) (semantic-list 10904 . 10932) (punctuation 10903 . 10904) (punctuation 10902 . 10903) (OPERATOR 10894 . 10902) (BOOL 10889 . 10893) (semantic-list 10766 . 10851) (symbol 10756 . 10766) (BOOL 10739 . 10743) (VIRTUAL 10731 . 10738) (INLINE 10724 . 10730) (semantic-list 10589 . 10679) (symbol 10579 . 10589) (BOOL 10562 . 10566) (VIRTUAL 10554 . 10561) (INLINE 10547 . 10553) (semantic-list 10492 . 10502) (symbol 10469 . 10492) (symbol 10452 . 10467) (VIRTUAL 10444 . 10451) (INLINE 10437 . 10443) (semantic-list 10335 . 10337) (symbol 10331 . 10335) (punctuation 10325 . 10326) (CHAR 10320 . 10324) (CONST 10314 . 10319) (VIRTUAL 10306 . 10313) (semantic-list 8901 . 9162) (symbol "BOOST_NOEXCEPT" 8873 . 8894) (CONST 8867 . 8872) (semantic-list 8864 . 8866) (punctuation 8862 . 8863) (CONST 8856 . 8861) (symbol 8841 . 8855) (punctuation 8840 . 8841) (punctuation 8839 . 8840) (symbol 8836 . 8839) (OPERATOR 8827 . 8835) (punctuation 8798 . 8799) (symbol "BOOST_NOEXCEPT" 8777 . 8798) (semantic-list 8774 . 8776) (symbol 8760 . 8774) (semantic-list 8621 . 8668) (symbol 8611 . 8621) (BOOL 8606 . 8610) (VIRTUAL 8598 . 8605) (semantic-list 8505 . 8557) (symbol 8495 . 8505) (BOOL 8490 . 8494) (VIRTUAL 8482 . 8489) (semantic-list 8431 . 8441) (symbol 8408 . 8431) (symbol 8392 . 8407) (punctuation 8391 . 8392) (punctuation 8390 . 8391) (symbol 8387 . 8390) (VIRTUAL 8379 . 8386) (semantic-list 8218 . 8259) (symbol 8195 . 8209) (CONST 8189 . 8194) (semantic-list 8186 . 8188) (symbol 8182 . 8186) (punctuation 8180 . 8181) (CHAR 8175 . 8179) (CONST 8169 . 8174) (VIRTUAL 8161 . 8168) (EXPLICIT 8055 . 8063) (semantic-list 8621 . 8668) (symbol 8611 . 8621) (BOOL 8606 . 8610) (VIRTUAL 8598 . 8605) (semantic-list 8505 . 8557) (symbol 8495 . 8505) (BOOL 8490 . 8494) (VIRTUAL 8482 . 8489) (semantic-list 8431 . 8441) (symbol 8408 . 8431) (symbol 8392 . 8407) (punctuation 8391 . 8392) (punctuation 8390 . 8391) (symbol 8387 . 8390) (VIRTUAL 8379 . 8386) (semantic-list 8218 . 8259) (symbol 8195 . 8209) (CONST 8189 . 8194) (semantic-list 8186 . 8188) (symbol 8182 . 8186) (punctuation 8180 . 8181) (CHAR 8175 . 8179) (CONST 8169 . 8174) (VIRTUAL 8161 . 8168) (EXPLICIT 8055 . 8063) (punctuation 7638 . 7639) (symbol 7623 . 7637) (CONST 7617 . 7622) (STATIC 7610 . 7616) (punctuation 7537 . 7538) (symbol 7522 . 7536) (CONST 7516 . 7521) (STATIC 7509 . 7515) (punctuation 7436 . 7437) (symbol 7421 . 7435) (CONST 7415 . 7420) (STATIC 7408 . 7414) (semantic-list 6981 . 6983) (symbol 6965 . 6981) (punctuation 6962 . 6963) (symbol 6947 . 6961) (CONST 6941 . 6946) (symbol 6923 . 6940) (semantic-list 6893 . 6895) (symbol 6878 . 6893) (punctuation 6875 . 6876) (symbol 6860 . 6874) (CONST 6854 . 6859) (symbol 6836 . 6853) (symbol 902 . 909) (symbol 899 . 901) (symbol 894 . 898) (symbol 876 . 893) (symbol 873 . 875) (symbol 857 . 872) (symbol 851 . 856) (punctuation 848 . 849))
+      :lexical-table 
+        '(("BOOST_SYSTEM_ERROR_CODE_HPP")
+          ("BOOST_SYSTEM_NOEXCEPT" . ((symbol "BOOST_NOEXCEPT" 1119 . 1133)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SYSTEM_SYSTEM_ERROR_HPP" variable (:constant-flag t) nil [317 346])
+            ("string" include (:system-flag t) nil [348 365])
+            ("stdexcept" include (:system-flag t) nil [366 386])
+            ("cassert" include (:system-flag t) nil [387 405])
+            ("boost/system/error_code.hpp" include (:system-flag t) nil [406 444])
+            ("boost" type
+               (:members 
+                  ( ("system" type
+                       (:members 
+                          ( ("std::runtime_error" variable (:type "int") (reparse-symbol namespacesubparts) [632 1925]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [466 2564]))                  
+                :type "namespace")
+                nil [446 2586]))          
+      :file "system_error.hpp"
+      :pointmax 2649
+      :fsize 2648
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax '((semantic-list 2172 . 2559) (symbol 2060 . 2085) (CONST 2054 . 2059) (semantic-list 2051 . 2053) (symbol 2047 . 2051) (punctuation 2046 . 2047) (punctuation 2045 . 2046) (symbol 2033 . 2045) (punctuation 2031 . 2032) (CHAR 2026 . 2030) (CONST 2020 . 2025) (INLINE 2013 . 2019) (PUBLIC 625 . 631) (punctuation 623 . 624) (symbol 610 . 622) (symbol 589 . 609) (CLASS 583 . 588))
+      :lexical-table 
+        '(("BOOST_SYSTEM_SYSTEM_ERROR_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SYSTEM_CONFIG_HPP" variable (:constant-flag t) nil [406 429])
+            ("boost/config.hpp" include (:system-flag t) nil [431 458])
+            ("boost/predef/platform.h" include (:system-flag t) nil [459 493])
+            ("boost/system/api_config.hpp" include (:system-flag t) nil [494 532])
+            ("BOOST_SYSTEM_STATIC_LINK" variable (:constant-flag t) nil [953 977])
+            ("BOOST_SYSTEM_DECL" variable (:constant-flag t) nil [1684 1701])
+            ("BOOST_LIB_NAME" variable (:constant-flag t) nil [2013 2027])
+            ("boost/config/auto_link.hpp" include (:system-flag t) nil [2270 2307]))          
+      :file "config.hpp"
+      :pointmax 2377
+      :fsize 2376
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax '((semantic-list 920 . 943) (symbol 913 . 920) (punctuation 912 . 913) (punctuation 910 . 911) (punctuation 909 . 910) (semantic-list 888 . 908) (symbol 881 . 888) (punctuation 880 . 881) (punctuation 878 . 879) (punctuation 877 . 878))
+      :lexical-table 
+        '(("BOOST_SYSTEM_DECL")
+          ("BOOST_SYSTEM_CONFIG_HPP")
+          ("BOOST_LIB_NAME" . ((symbol "boost_system" 2028 . 2040)))
+          ("BOOST_SYSTEM_STATIC_LINK")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SYSTEM_API_CONFIG_HPP" variable (:constant-flag t) nil [1136 1163])
+            ("BOOST_POSIX_API" variable (:constant-flag t) nil [1730 1745]))          
+      :file "api_config.hpp"
+      :pointmax 1833
+      :fsize 1832
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SYSTEM_API_CONFIG_HPP")
+          ("BOOST_POSIX_API")
+          )
+))
+  :file "!usr!local!Cellar!boost!1.65.1!include!boost!system!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

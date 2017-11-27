@@ -1,0 +1,137 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_REGEX_CONFIG_HPP" variable (:constant-flag t) nil [488 510])
+            ("boost/version.hpp" include (:system-flag t) nil [685 713])
+            ("BOOST_REGEX_USER_CONFIG" variable (:constant-flag t) nil [989 1012])
+            ("boost/config.hpp" include (:system-flag t) nil [1082 1111])
+            ("boost/predef.h" include (:system-flag t) nil [1112 1139])
+            ("BOOST_RE_VERSION" variable (:constant-flag t) nil [1645 1661])
+            ("BOOST_REGEX_DETAIL_NS" variable (:constant-flag t) nil [1913 1934])
+            ("boost/regex/config/cwchar.hpp" include (:system-flag t) nil [3693 3735])
+            ("BOOST_REGEX_NO_FILEITER" variable (:constant-flag t) nil [4243 4266])
+            ("BOOST_SYMBOL_EXPORT" variable (:constant-flag t) nil [6666 6685])
+            ("BOOST_SYMBOL_IMPORT" variable (:constant-flag t) nil [6696 6715])
+            ("BOOST_REGEX_DECL" variable (:constant-flag t) nil [7030 7046])
+            ("BOOST_LIB_NAME" variable (:constant-flag t) nil [7184 7198])
+            ("boost/config/auto_link.hpp" include (:system-flag t) nil [7384 7423])
+            ("BOOST_REGEX_CALL" variable (:constant-flag t) nil [8097 8113])
+            ("BOOST_REGEX_CCALL" variable (:constant-flag t) nil [8155 8172])
+            ("BOOST_REGEX_USE_CPP_LOCALE" variable (:constant-flag t) nil [9322 9348])
+            ("BOOST_REGEX_MAX_STATE_COUNT" variable (:constant-flag t) nil [9597 9624])
+            ("BOOST_REGEX_NOEH_ASSERT" variable (:constant-flag t) nil [10395 10418])
+            ("BOOST_REGEX_NON_RECURSIVE" variable (:constant-flag t) nil [11744 11769])
+            ("BOOST_REGEX_BLOCKSIZE" variable (:constant-flag t) nil [11986 12007])
+            ("BOOST_REGEX_MAX_BLOCKS" variable (:constant-flag t) nil [12168 12190])
+            ("BOOST_REGEX_MAX_CACHE_BLOCKS" variable (:constant-flag t) nil [12349 12377])
+            ("boost" type
+               (:members 
+                  ( ("BOOST_JOIN" type (:type "namespace") (reparse-symbol namespacesubparts) [12684 12715]))                  
+                :type "namespace")
+                nil [12667 12839]))          
+      :file "config.hpp"
+      :pointmax 14014
+      :fsize 14013
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax '((semantic-list 12715 . 12838) (punctuation ">" 1057 . 1080) (symbol "hpp" 1057 . 1080) (punctuation "." 1057 . 1080) (symbol "user" 1057 . 1080) (punctuation "/" 1057 . 1080) (symbol "regex" 1057 . 1080) (punctuation "/" 1057 . 1080) (symbol "boost" 1057 . 1080) (punctuation "<" 1057 . 1080) (symbol 1049 . 1056) (punctuation 1046 . 1047))
+      :lexical-table 
+        '(("BOOST_REGEX_CALL")
+          ("BOOST_REGEX_NO_FILEITER")
+          ("BOOST_LIB_NAME" . ((symbol "boost_regex" 7199 . 7210)))
+          ("BOOST_RE_VERSION" . ((number "320" 1662 . 1665)))
+          ("BOOST_REGEX_CCALL")
+          ("BOOST_SYMBOL_EXPORT")
+          ("BOOST_REGEX_USER_CONFIG" . 
+              ((punctuation "<" 1013 . 1014) (symbol "boost" 1014 . 1019) (punctuation "/" 1019 . 1020) (symbol "regex" 1020 . 1025) (punctuation "/" 1025 . 1026) (symbol "user" 1026 . 1030) (punctuation "." 1030 . 1031) (symbol "hpp" 1031 . 1034) (punctuation ">" 1034 . 1035)))
+          ("BOOST_REGEX_MAX_CACHE_BLOCKS" . ((number "16" 12378 . 12380)))
+          ("BOOST_REGEX_NOEH_ASSERT" (spp-arg-list ("x") 10418 . 10421))
+          ("BOOST_REGEX_NON_RECURSIVE")
+          ("BOOST_REGEX_BLOCKSIZE" . ((number "4096" 12008 . 12012)))
+          ("BOOST_SYMBOL_IMPORT")
+          ("BOOST_REGEX_MAX_STATE_COUNT" . ((number "100000000" 9625 . 9634)))
+          ("BOOST_REGEX_DECL")
+          ("BOOST_REGEX_DETAIL_NS" . ((symbol "BOOST_JOIN" 1935 . 1945) (semantic-list "(re_detail_, BOOST_VERSION)" 1945 . 1972)))
+          ("BOOST_REGEX_USE_CPP_LOCALE")
+          ("BOOST_REGEX_CONFIG_HPP")
+          ("BOOST_REGEX_MAX_BLOCKS" . ((number "1024" 12191 . 12195)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_REGEX_TRAITS_HPP" variable (:constant-flag t) nil [512 534])
+            ("boost/regex/config.hpp" include (:system-flag t) nil [567 602])
+            ("boost/regex/v4/regex_traits.hpp" include (:system-flag t) nil [653 700]))          
+      :file "regex_traits.hpp"
+      :pointmax 734
+      :fsize 733
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_REGEX_TRAITS_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_RE_PAT_EXCEPT_HPP" variable (:constant-flag t) nil [516 539])
+            ("boost/regex/config.hpp" include (:system-flag t) nil [572 605])
+            ("stdexcept" include (:system-flag t) nil [614 634])
+            ("cstddef" include (:system-flag t) nil [635 653])
+            ("boost/regex/v4/error_type.hpp" include (:system-flag t) nil [654 694])
+            ("boost" type
+               (:members 
+                  ( ("std::runtime_error" variable (:type "int") (reparse-symbol namespacesubparts) [1026 1516])
+                    ("bad_pattern" type
+                       (:typedef ("regex_error" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1518 1550])
+                    ("bad_expression" type
+                       (:typedef ("regex_error" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1551 1586])
+                    ("BOOST_REGEX_DETAIL_NS" type
+                       (:members 
+                          ( ("raise_runtime_error" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("ex" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::runtime_error" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1681 1710]))                                  
+                                :type ("BOOST_REGEX_CALL" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [1644 1711])
+                            ("raise_error" function
+                               (:template 
+                                  ( ("traits" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("t" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("traits" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1754 1770])
+                                    ("code" variable (:type ("regex_constants::error_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1771 1804]))                                  )
+                                (reparse-symbol namespacesubparts) [1713 1950]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1588 1953]))                  
+                :type "namespace")
+                nil [696 2192]))          
+      :file "pattern_except.hpp"
+      :pointmax 2223
+      :fsize 2222
+      :lastmodtime '(22954 35028 0 0)
+      :unmatched-syntax '((VOID 1639 . 1643) (symbol 1622 . 1638) (PUBLIC 1019 . 1025) (punctuation 1017 . 1018) (symbol 1005 . 1016) (symbol 988 . 1004) (CLASS 982 . 987))
+      :lexical-table 
+        '(("BOOST_RE_PAT_EXCEPT_HPP")
+          )
+))
+  :file "!usr!local!Cellar!boost!1.65.1!include!boost!regex!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

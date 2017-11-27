@@ -1,0 +1,1147 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("string.h" include (:system-flag t) nil [46 65])
+            ("stdlib.h" include (:system-flag t) nil [91 110])
+            ("arpa/inet.h" include (:system-flag t) nil [137 159])
+            ("sys/socket.h" include (:system-flag t) nil [160 183])
+            ("unistd.h" include (:system-flag t) nil [184 203])
+            ("pthread.h" include (:system-flag t) nil [204 224])
+            ("bitwiseencrypt.h" include nil nil [226 253])
+            ("BUFLEN" variable (:constant-flag t) nil [285 291])
+            ("UDP_PORT" variable (:constant-flag t) nil [341 349])
+            ("TCP_PORT" variable (:constant-flag t) nil [415 423])
+            ("FSS_IP" variable (:constant-flag t) nil [488 494])
+            ("FSS_UDP_PORT" variable (:constant-flag t) nil [515 527])
+            ("FSS_TCP_PORT" variable (:constant-flag t) nil [541 553])
+            ("NUM_SERVER_THREADS" variable (:constant-flag t) nil [567 585])
+            ("MAXTHREADS" variable (:constant-flag t) nil [596 606])
+            ("LOG" variable (:constant-flag t) nil [620 623])
+            ("encryption_method" type
+               (:members 
+                  ( ("ROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [660 664])
+                    ("ROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [665 669])
+                    ("NOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [670 674])
+                    ("XOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [675 679]))                  
+                :type "enum")
+                nil [636 680])
+            ("method1" variable (:type ("encryption_method" type (:type "enum") nil nil)) nil [681 721])
+            ("method2" variable (:type ("encryption_method" type (:type "enum") nil nil)) nil [681 721])
+            ("ConnThread" type
+               (:members 
+                  ( ("connection_id" variable (:type "int") (reparse-symbol classsubparts) [751 769])
+                    ("next_thread" variable
+                       (:pointer 1
+                        :type ("ConnThread" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [771 802]))                  
+                :type "struct")
+                nil [723 816])
+            ("connThread" type
+               (:typedef ("ConnThread" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [723 816])
+            ("init_packet" type
+               (:members 
+                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [843 861])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [866 886])
+                    ("fss_ip" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [891 908])
+                    ("dest_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [913 933])
+                    ("enc_byte_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [938 961])
+                    ("message" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [966 994]))                  
+                :type "struct")
+                nil [818 1126])
+            ("init_packet" variable
+               (:pointer 1
+                :type ("init_packet" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1128 1161])
+            ("other_packets" type
+               (:members 
+                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1190 1208])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1213 1233])
+                    ("message" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1238 1266]))                  
+                :type "struct")
+                nil [1163 1269])
+            ("udprequest" type
+               (:members 
+                  ( ("id" variable (:type "int") (reparse-symbol classsubparts) [1294 1301])
+                    ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1303 1321])
+                    ("from" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1323 1347])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1349 1375])
+                    ("initpack" variable (:type ("init_packet" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1380 1408])
+                    ("encryption_args" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1413 1436]))                  
+                :type "struct")
+                nil [1271 1618])
+            ("sockudp" variable (:type "int") nil [1645 1667])
+            ("recv_len" variable (:type "int") nil [1645 1667])
+            ("LOGLOCK" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1668 1720])
+            ("mutex1" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1721 1772])
+            ("connection_num" variable
+               (:default-value "0"
+                :type "int")
+                nil [1806 1829])
+            ("start_thread" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("ConnThread" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1939 1978])
+            ("openrequests" variable
+               (:pointer 1
+                :dereference 1
+                :type ("udprequest" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2062 2100])
+            ("udpserve" function
+               (:prototype-flag t
+                :pointer 1
+                :type "void")
+                nil [2102 2120])
+            ("UDP_connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2150 2165]))                  
+                :type "void")
+                nil [2121 2166])
+            ("udpclient" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2193 2213]))                  
+                :type "unsigned char")
+                nil [2167 2214])
+            ("tcpserve" function
+               (:prototype-flag t
+                :pointer 1
+                :type "void")
+                nil [2215 2233])
+            ("TCP_connection_handler" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2263 2278]))                  
+                :type "void")
+                nil [2234 2279])
+            ("tcp_client" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2307 2316]))                  
+                :type "unsigned char")
+                nil [2280 2317])
+            ("store_packet" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2336 2369])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2370 2380]))                  
+                :type "void")
+                nil [2318 2381])
+            ("printbuf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2396 2415]))                  
+                :type "void")
+                nil [2382 2416])
+            ("myencrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2432 2457])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2458 2481])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2482 2502])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2503 2531]))                  
+                :type "void")
+                nil [2417 2532])
+            ("mydecrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2548 2574])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2575 2603]))                  
+                :type "void")
+                nil [2533 2604])
+            ("LOGDATA" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("prepend" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2618 2633])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2634 2654]))                  
+                :type "void")
+                nil [2605 2655])
+            ("packethandle" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("incoming" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2693 2717]))                  
+                :type ("other_packets" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2657 2718])
+            ("insert_thread" function
+               (:arguments 
+                  ( ("c_id" variable (:type "int") (reparse-symbol arg-sub-list) [2739 2748]))                  
+                :type "void")
+                nil [2720 3579])
+            ("remove_thread" function
+               (:arguments 
+                  ( ("c_id" variable (:type "int") (reparse-symbol arg-sub-list) [3600 3609]))                  
+                :type "void")
+                nil [3581 4526])
+            ("print_threads" function (:type "void") nil [4527 4799])
+            ("mydecrypt" function
+               (:arguments 
+                  ( ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4818 4844])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4845 4873]))                  
+                :type "void")
+                nil [4803 6949])
+            ("myencrypt" function
+               (:arguments 
+                  ( ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7039 7064])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7065 7088])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7089 7109])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7110 7138]))                  
+                :type "void")
+                nil [7024 11990])
+            ("generatepacket" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12012 12030]))                  
+                :type "void")
+                nil [11992 12035])
+            ("decider" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12106 12125]))                  
+                :type "int")
+                nil [12094 12261])
+            ("store_packet" function
+               (:arguments 
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12281 12309])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12310 12320]))                  
+                :type "void")
+                nil [12263 12876])
+            ("die" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12887 12895]))                  
+                :type "void")
+                nil [12878 12927])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [12938 12943]))                  
+                :type "int")
+                nil [12929 14426])
+            ("tcpserve" function
+               (:pointer 1
+                :type "void")
+                nil [14431 15909])
+            ("TCP_connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("socketfd" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [16124 16139]))                  
+                :type "void")
+                nil [16095 18540])
+            ("tcp_client" function
+               (:pointer 1
+                :arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18631 18640]))                  
+                :type "unsigned char")
+                nil [18604 20600])
+            ("udpserve" function
+               (:pointer 1
+                :type "void")
+                nil [20602 22830])
+            ("UDP_connection_handler" function
+               (:pointer 1
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [22944 22964]))                  
+                :type "void")
+                nil [22914 24815])
+            ("packethandle" function
+               (:pointer 1
+                :arguments 
+                  ( ("incoming" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24912 24936]))                  
+                :type ("other_packets" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24876 25337])
+            ("udpclient" function
+               (:pointer 1
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [25428 25448]))                  
+                :type "unsigned char")
+                nil [25402 28321])
+            ("printbuf" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28339 28358]))                  
+                :type "void")
+                nil [28325 28633])
+            ("LOGDATA" function
+               (:arguments 
+                  ( ("prepend" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28728 28743])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28744 28764]))                  
+                :type "void")
+                nil [28715 29055]))          
+      :file "FileTransferService.c"
+      :pointmax 29056
+      :fsize 28966
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TCP_PORT" . ((number "7778" 424 . 428)))
+          ("FSS_UDP_PORT" . ((number "8888" 528 . 532)))
+          ("NUM_SERVER_THREADS" . ((number "2" 586 . 587)))
+          ("BUFLEN" . ((number "1024" 292 . 296)))
+          ("LOG" . ((string "\"FTS.log\"" 624 . 633)))
+          ("UDP_PORT" . ((number "6666" 350 . 354)))
+          ("FSS_IP" . ((string "\"127.0.0.1\"" 495 . 506)))
+          ("FSS_TCP_PORT" . ((number "9999" 554 . 558)))
+          ("MAXTHREADS" . ((number "1000" 607 . 611)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("printbincharpad" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [63 70]))                  
+                :type "void")
+                nil [42 71])
+            ("BITXOR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [86 105])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [106 126])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [127 135])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [136 145]))                  
+                :type "void")
+                nil [72 146])
+            ("BITNOT" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [161 180])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [181 201])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [202 211]))                  
+                :type "void")
+                nil [147 212])
+            ("BITROR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [227 246])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [247 267])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [268 276])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [277 286]))                  
+                :type "void")
+                nil [213 287])
+            ("BITROL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [302 321])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [322 342])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [343 351])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [352 361]))                  
+                :type "void")
+                nil [288 362])
+            ("lenHelper" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [377 388]))                  
+                :type "int")
+                nil [363 389]))          
+      :file "bitwiseencrypt.h"
+      :pointmax 390
+      :fsize 389
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("socket" include nil nil [1 14])
+            ("sys" include nil nil [15 25])
+            ("os" include nil nil [26 35])
+            ("threading" include nil nil [36 52])
+            ("getopt" include nil nil [53 66])
+            ("binascii" include nil nil [67 82])
+            ("struct" include nil nil [83 96])
+            ("time" include nil nil [97 108])
+            ("FTS_UDP_PORT" variable nil nil [110 129])
+            ("FTS_TCP_PORT" variable nil nil [130 149])
+            ("FTS_IP" variable nil nil [150 170])
+            ("VALIDATION_MESSAGE" variable nil nil [172 203])
+            ("messagehandler" function (:arguments 
+              ( ("packetbuf" variable nil (reparse-symbol function_parameters) [225 234]))              ) nil [206 767])
+            ("udpInit" function (:arguments 
+              ( ("FSS_IP" variable nil (reparse-symbol function_parameters) [780 786])
+                ("FSS_PORT" variable nil (reparse-symbol function_parameters) [788 796])
+                ("FILE" variable nil (reparse-symbol function_parameters) [798 802])
+                ("ENCRYPTION_SCHEME" variable nil (reparse-symbol function_parameters) [804 821]))              ) nil [768 1613])
+            ("filesender" function (:arguments 
+              ( ("ENCRYPTION_SCHEME" variable nil (reparse-symbol function_parameters) [1629 1646])
+                ("FILE" variable nil (reparse-symbol function_parameters) [1648 1652]))              ) nil [1614 2307])
+            ("ip2int" function (:arguments 
+              ( ("addr" variable nil (reparse-symbol function_parameters) [2319 2323]))              ) nil [2308 2517])
+            ("int2ip" function (:arguments 
+              ( ("addr" variable nil (reparse-symbol function_parameters) [2530 2534]))              ) nil [2519 2657])
+            ("menu" function nil nil [2658 3106])
+            ("packetize" function (:arguments 
+              ( ("FSS_IP" variable nil (reparse-symbol function_parameters) [3124 3130])
+                ("FSS_PORT" variable nil (reparse-symbol function_parameters) [3132 3140])
+                ("FILE" variable nil (reparse-symbol function_parameters) [3142 3146])
+                ("ENCRYPTION_SCHEME" variable nil (reparse-symbol function_parameters) [3148 3165]))              ) nil [3110 4125])
+            ("usage" function nil nil [4130 4536])
+            ("main" function nil nil [4537 5701])
+            ("if" code nil nil [5724 5762]))          
+      :file "C2.py"
+      :pointmax 5762
+      :fsize 6169
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax '((INDENT_BLOCK 4847 . 4886) (NEWLINE 4846 . 4847) (COLON 4845 . 4846) (TRY 4689 . 4692) (AS 4839 . 4841)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("bitwiseencrypt.h" include nil nil [40 67])
+            ("printbincharpad" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [91 98]))                  
+                :type "void")
+                nil [70 214])
+            ("BITXOR" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [230 249])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [250 270])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [271 279])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [280 289]))                  
+                :type "void")
+                nil [216 544])
+            ("BITNOT" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [560 579])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [580 600])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [601 610]))                  
+                :type "void")
+                nil [546 787])
+            ("BITROR" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [960 979])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [980 1000])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1001 1009])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1010 1019]))                  
+                :type "void")
+                nil [946 1279])
+            ("BITROL" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1294 1313])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1314 1334])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1335 1343])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1344 1353]))                  
+                :type "void")
+                nil [1280 1637])
+            ("lenHelper" function
+               (:arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1654 1665]))                  
+                :type "int")
+                nil [1640 1783]))          
+      :file "bitwiseencrypt.c"
+      :pointmax 1784
+      :fsize 1783
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("threading" include nil nil [19 35])
+            ("SocketServer" include nil nil [36 55])
+            ("struct" include nil nil [56 69])
+            ("binascii" include nil nil [70 85])
+            ("ThreadedTCPRequestHandler" type
+               (:superclasses ("SocketServer.BaseRequestHandler")
+                :members 
+                  ( ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [170 174]))                          )
+                        (reparse-symbol indented_block_body) [159 532]))                  
+                :type "class")
+                nil [88 532])
+            ("ThreadedTCPServer" type
+               (:superclasses ("SocketServer.ThreadingMixIn" "SocketServer.TCPServer")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [615 619]))                  
+                :type "class")
+                nil [533 620])
+            ("MyUDPHandler" type
+               (:documentation "
+    This class works similar to the TCP handler class, except that
+    self.request consists of a pair of data and client socket, and since
+    there is no connection the client address must be given explicitly
+    when sending data back via sendto().
+    "
+                :superclasses ("SocketServer.BaseRequestHandler")
+                :members 
+                  ( ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [959 963]))                          )
+                        (reparse-symbol indented_block_body) [948 1374]))                  
+                :type "class")
+                nil [622 1374])
+            ("messagehandler" function (:arguments 
+              ( ("packetbuf" variable nil (reparse-symbol function_parameters) [1394 1403]))              ) nil [1375 1898])
+            ("packer" function (:arguments 
+              ( ("packetbuf" variable nil (reparse-symbol function_parameters) [1924 1933]))              ) nil [1913 2029])
+            ("if" code nil nil [2041 2551]))          
+      :file "FileStorageService.py"
+      :pointmax 2557
+      :fsize 2556
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("all" function (:arguments ("server.o" "thread.o" "server_func.o" "packet.o")) nil [1 123])
+            ("FileTransferService.o" function nil nil [123 201])
+            ("encrypt.o" function nil nil [201 250])
+            ("thread.o" function (:arguments ("server_func.o" "packet.o")) nil [250 312])
+            ("server.o" function (:arguments ("thread.o" "server_func.o" "packet.o")) nil [312 393]))          
+      :file "makefile~"
+      :pointmax 393
+      :fsize 0
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax '((shell-command 355 . 392) (bol 354 . 354)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode html-mode
+      :tags 
+        '( ("Dev Assessment Outline" section nil nil [41 410])
+            ("/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}" section nil nil [410 501])
+            ("/* org mode styles on top of twbs */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 101px;
+    background-color: #f5f5f5;
+}
+
+footer > div {
+    padding: 10px;
+}
+
+footer p {
+    margin: 0 0 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#table-of-contents {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+blockquote p {
+    font-size: 18px;
+}
+
+pre {
+    font-size: 16px;
+}
+
+.footpara {
+    display: inline-block;
+}
+
+figcaption {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+/* from twbs docs */
+
+.bs-docs-sidebar.affix {
+    position: static;
+}
+@media (min-width: 768px) {
+    .bs-docs-sidebar {
+        padding-left: 20px;
+    }
+}
+
+/* All levels of nav */
+.bs-docs-sidebar .nav > li > a {
+    display: block;
+    padding: 4px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #999;
+}
+.bs-docs-sidebar .nav > li > a:hover,
+.bs-docs-sidebar .nav > li > a:focus {
+    padding-left: 19px;
+    color: #A1283B;
+    text-decoration: none;
+    background-color: transparent;
+    border-left: 1px solid #A1283B;
+}
+.bs-docs-sidebar .nav > .active > a,
+.bs-docs-sidebar .nav > .active:hover > a,
+.bs-docs-sidebar .nav > .active:focus > a {
+    padding-left: 18px;
+    font-weight: bold;
+    color: #A1283B;
+    background-color: transparent;
+    border-left: 2px solid #A1283B;
+}
+
+/* Nav: second level (shown on .active) */
+.bs-docs-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav > li > a:focus {
+    padding-left: 29px;
+}
+.bs-docs-sidebar .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav > .active:focus > a {
+    padding-left: 28px;
+    font-weight: 500;
+}
+
+/* Nav: third level (shown on .active) */
+.bs-docs-sidebar .nav .nav .nav {
+    padding-bottom: 10px;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bs-docs-sidebar .nav .nav .nav > li > a:hover,
+.bs-docs-sidebar .nav .nav .nav > li > a:focus {
+    padding-left: 39px;
+}
+.bs-docs-sidebar .nav .nav .nav > .active > a,
+.bs-docs-sidebar .nav .nav .nav > .active:hover > a,
+.bs-docs-sidebar .nav .nav .nav > .active:focus > a {
+    padding-left: 38px;
+    font-weight: 500;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+    .bs-docs-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .bs-docs-sidebar.affix,
+    .bs-docs-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .bs-docs-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 20px;
+    }
+    .bs-docs-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .bs-docs-sidebar.affix .bs-docs-sidenav,.bs-docs-sidebar.affix-bottom .bs-docs-sidenav {
+        margin-top: 0;
+        margin-bottom: 0
+    }
+}
+@media (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .bs-docs-sidebar.affix-bottom,
+    .bs-docs-sidebar.affix {
+        width: 263px;
+    }
+}" section nil nil [501 4168])
+            ("$(function() {
+    'use strict';
+
+    $('.bs-docs-sidebar li').first().addClass('active');
+
+    $(document.body).scrollspy({target: '.bs-docs-sidebar'});
+
+    $('.bs-docs-sidebar').affix();
+});" section nil nil [4168 4412])
+            ("Dev Assessment Outline" section (:members 
+              ( ("Dev Assessment Outline" section (:members 
+                  ( ("1" section nil nil [4595 5348])
+                    ("2" section nil nil [5348 5477])
+                    ("3" section nil nil [5477 9215])
+                    ("4" section (:members 
+                      ( ("4.1" section nil nil [9383 11908])
+                        ("4.2" section nil nil [11908 14732])
+                        ("4.3" section nil nil [14732 16418])
+                        ("4.4" section nil nil [16418 17507])
+                        ("4.5" section nil nil [17507 17758]))                      ) nil [9215 17758])
+                    ("5" section nil nil [17758 17886])
+                    ("6" section (:members 
+                      ( ("6.1" section nil nil [18062 18317])
+                        ("6.2" section nil nil [18317 18697])
+                        ("6.3" section (:members 
+                          ( ("1. Project Overview" anchor nil nil [19165 19168])
+                            ("2. Building" anchor nil nil [19215 19218])
+                            ("3. C2.py" anchor nil nil [19257 19260])
+                            ("4. FTS.c" anchor nil nil [19296 19299])
+                            ("4.1. Overview" anchor nil nil [19347 19350])
+                            ("4.2. UDP Functionality" anchor nil nil [19393 19396])
+                            ("4.3. TCP Functionality" anchor nil nil [19448 19451])
+                            ("4.4. Bitwise Encrypt Library" anchor nil nil [19503 19506])
+                            ("4.5. more items" anchor nil nil [19564 19567])
+                            ("5. FSS.py" anchor nil nil [19624 19627])
+                            ("6. FILE TRACKING" anchor nil nil [19664 19667])
+                            ("6.1. C2.py" anchor nil nil [19723 19726])
+                            ("6.2. FTS.c" anchor nil nil [19766 19769])
+                            ("6.3. FSS.py" anchor nil nil [19809 19812])
+                            ("Emacs" anchor nil nil [20054 20057])
+                            ("Org-mode" anchor nil nil [20117 20120]))                          ) nil [18697 20204]))                      ) nil [17886 20204]))                  ) nil [4495 20204]))              ) nil [4412 20204]))          
+      :file "project.html"
+      :pointmax 20204
+      :fsize 20423
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-bsdmake-mode
+      :tags 
+        '( ("HEADERS" variable (:default-value ("bitwiseencrypt.h")) nil [1 28])
+            ("CC" variable (:default-value ("gcc")) nil [28 35])
+            ("CFLAGS" variable (:default-value ("-Wall")) nil [35 48])
+            ("all" function (:arguments ("FileTransferService")) nil [49 74])
+            ("FileTransferService" function (:arguments ("FileTransferService.o" "bitwiseencrypt.o")) nil [75 218])
+            ("FileTransferService.o" function (:arguments ("FileTransferService.c" "$(HEADERS)")) nil [219 346])
+            ("bitwiseencrypt.o" function (:arguments ("bitwiseencrypt.c" "bitwiseencrypt.h")) nil [347 424])
+            ("clean" function nil nil [425 515]))          
+      :file "makefile"
+      :pointmax 515
+      :fsize 514
+      :lastmodtime '(22986 25524 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!samuellough!Documents!cpt-lough!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
