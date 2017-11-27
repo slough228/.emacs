@@ -23,6 +23,12 @@
                                (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))
 
+(require 'auto-complete)
+(require 'auto-complete-config)
+(ac-config-default)
+
+
+
 ;; setup GDB
 (setq
  ;; use gdb-many-windows by default

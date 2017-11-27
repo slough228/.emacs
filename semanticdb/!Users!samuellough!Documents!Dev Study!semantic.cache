@@ -40,7 +40,7 @@
       :pointmax 1673
       :fsize 1672
       :lastmodtime '(22970 46640 0 0)
-      :unmatched-syntax nil
+      :unmatched-syntax '((number 214 . 215))
       :lexical-table 
         '(("MAX_SIZE" . ((number "50" 192 . 194)))
           ("NUM_CLIENT" . ((number "5" 214 . 215)))
@@ -336,7 +336,281 @@
       :lexical-table 
         '(("NUM_THREADS" . ((number "2" 102 . 103)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("printbincharpad" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [65 72]))                  
+                :type "void")
+                nil [44 188])
+            ("EXOR" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [202 212])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [213 222]))                  
+                :type "void")
+                nil [190 471])
+            ("NOT" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [483 502])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [503 512]))                  
+                :type "void")
+                nil [473 625])
+            ("ROR" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [638 649])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [650 659]))                  
+                :type "void")
+                nil [627 822])
+            ("ROL" function
+               (:pointer 1
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [834 845])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [846 855]))                  
+                :type "void")
+                nil [823 1062])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1075 1084])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1085 1102]))                  
+                :type "int")
+                nil [1066 1362]))          
+      :file "bitwiseencrypt.c"
+      :pointmax 1363
+      :fsize 1362
+      :lastmodtime '(22980 2668 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/types.h" include (:system-flag t) nil [2 24])
+            ("stdlib.h" include (:system-flag t) nil [25 44])
+            ("unistd.h" include (:system-flag t) nil [45 64])
+            ("sys/socket.h" include (:system-flag t) nil [65 88])
+            ("netinet/in.h" include (:system-flag t) nil [89 112])
+            ("string.h" include (:system-flag t) nil [113 132])
+            ("netdb.h" include (:system-flag t) nil [133 151])
+            ("stdio.h" include (:system-flag t) nil [152 170])
+            ("pthread.h" include (:system-flag t) nil [171 191])
+            ("MAX_THREADS" variable (:constant-flag t) nil [250 261])
+            ("SERVER_PORT" variable (:constant-flag t) nil [273 284])
+            ("PACK_SIZE" variable (:constant-flag t) nil [298 307])
+            ("BUF_SIZE" variable (:constant-flag t) nil [358 366])
+            ("SEPARATOR" variable (:constant-flag t) nil [424 433])
+            ("packet_type" type
+               (:members 
+                  ( ("REQ" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [566 570])
+                    ("INITIATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [571 580])
+                    ("RESPONSE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [581 590])
+                    ("VALIDATE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [591 600]))                  
+                :type "enum")
+                nil [548 601])
+            ("Packet" type
+               (:members 
+                  ( ("connection_id" variable (:type "short") (reparse-symbol classsubparts) [619 639])
+                    ("type" variable (:type ("packet_type" type (:type "enum") nil nil)) (reparse-symbol classsubparts) [641 663])
+                    ("status" variable (:type "short") (reparse-symbol classsubparts) [665 678])
+                    ("buffer" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [680 702]))                  
+                :type "struct")
+                nil [603 705])
+            ("Request" type
+               (:members 
+                  ( ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [724 742])
+                    ("from" variable (:type ("sockaddr_in" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [744 768])
+                    ("buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [770 790]))                  
+                :type "struct")
+                nil [707 793])
+            ("Thread" type
+               (:members 
+                  ( ("connection_id" variable (:type "int") (reparse-symbol classsubparts) [811 829])
+                    ("next_thread" variable
+                       (:pointer 1
+                        :type ("Thread" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [831 858]))                  
+                :type "struct")
+                nil [795 861])
+            ("sock" variable (:type "int") nil [923 943])
+            ("length" variable (:type "int") nil [923 943])
+            ("n" variable (:type "int") nil [923 943])
+            ("server" variable (:type ("sockaddr_in" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [944 970])
+            ("thread_no" variable
+               (:default-value "0"
+                :type "int")
+                nil [972 990])
+            ("h_thread" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("Thread" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [991 1022])
+            ("mutex1" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1074 1125])
+            ("mutex2" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1180 1231])
+            ("parse_packet" function
+               (:arguments 
+                  ( ("packet_str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1551 1568])
+                    ("packet" variable
+                       (:reference 1
+                        :type ("Packet" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1569 1591]))                  
+                :type "void")
+                nil [1533 2169])
+            ("handle_request" function
+               (:pointer 1
+                :arguments 
+                  ( ("req" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2192 2202]))                  
+                :type "void")
+                nil [2171 4863])
+            ("insert_thread" function (:type "short") nil [4979 5614])
+            ("remove_thread" function
+               (:arguments 
+                  ( ("conn_id" variable (:type "short") (reparse-symbol arg-sub-list) [5735 5749]))                  
+                :type "void")
+                nil [5716 6214])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6230 6239])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6240 6252]))                  
+                :type "int")
+                nil [6221 7268]))          
+      :file "ThreadedUDPSLL.c"
+      :pointmax 7269
+      :fsize 7268
+      :lastmodtime '(22979 48203 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BUF_SIZE" . ((number "1012" 367 . 371)))
+          ("SEPARATOR" . ((string "';'" 434 . 437)))
+          ("MAX_THREADS" . ((number "10" 262 . 264)))
+          ("SERVER_PORT" . ((number "3333" 285 . 289)))
+          ("PACK_SIZE" . ((number "1024" 308 . 312)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("hello.h" include nil nil [20 38])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [48 57])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [58 75]))                  
+                :type "int")
+                nil [39 113]))          
+      :file "hello.c"
+      :pointmax 114
+      :fsize 95
+      :lastmodtime '(22980 3834 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("hello" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12 30]))                  
+                :type "void")
+                nil [1 31]))          
+      :file "hello.h"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(22980 4082 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("hello.h" include nil nil [20 38])
+            ("hello" function
+               (:arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [52 70]))                  
+                :type "void")
+                nil [41 106]))          
+      :file "hello_fn.c"
+      :pointmax 107
+      :fsize 106
+      :lastmodtime '(22980 4072 0 0)
+      :unmatched-syntax nil))
   :file "!Users!samuellough!Documents!Dev Study!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

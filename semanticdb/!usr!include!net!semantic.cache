@@ -109,6 +109,619 @@
           ("KEV_INET6_NEW_LL_ADDR" . ((number "4" 4297 . 4298)))
           ("KEV_INET6_DEFROUTER" . ((number "6" 4452 . 4453)))
           )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_NET_IF_H_" variable (:constant-flag t) nil [3235 3245])
+            ("sys/cdefs.h" include (:system-flag t) nil [3247 3269])
+            ("net/net_kev.h" include (:system-flag t) nil [3270 3294])
+            ("IF_NAMESIZE" variable (:constant-flag t) nil [3304 3315])
+            ("sys/appleapiopts.h" include (:system-flag t) nil [3379 3408])
+            ("net/if_var.h" include (:system-flag t) nil [3427 3450])
+            ("sys/types.h" include (:system-flag t) nil [3451 3473])
+            ("sys/socket.h" include (:system-flag t) nil [3474 3497])
+            ("if_clonereq" type
+               (:members 
+                  ( ("ifcr_total" variable (:type "int") (reparse-symbol classsubparts) [3529 3544])
+                    ("ifcr_count" variable (:type "int") (reparse-symbol classsubparts) [3573 3588])
+                    ("ifcr_buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3631 3649]))                  
+                :type "struct")
+                nil [3507 3683])
+            ("IFF_UP" variable (:constant-flag t) nil [3694 3700])
+            ("IFF_BROADCAST" variable (:constant-flag t) nil [3737 3750])
+            ("IFF_DEBUG" variable (:constant-flag t) nil [3794 3803])
+            ("IFF_LOOPBACK" variable (:constant-flag t) nil [3841 3853])
+            ("IFF_POINTOPOINT" variable (:constant-flag t) nil [3891 3906])
+            ("IFF_NOTRAILERS" variable (:constant-flag t) nil [3960 3974])
+            ("IFF_RUNNING" variable (:constant-flag t) nil [4027 4038])
+            ("IFF_NOARP" variable (:constant-flag t) nil [4079 4088])
+            ("IFF_PROMISC" variable (:constant-flag t) nil [4140 4151])
+            ("IFF_ALLMULTI" variable (:constant-flag t) nil [4193 4205])
+            ("IFF_OACTIVE" variable (:constant-flag t) nil [4257 4268])
+            ("IFF_SIMPLEX" variable (:constant-flag t) nil [4315 4326])
+            ("IFF_LINK0" variable (:constant-flag t) nil [4377 4386])
+            ("IFF_LINK1" variable (:constant-flag t) nil [4436 4445])
+            ("IFF_LINK2" variable (:constant-flag t) nil [4495 4504])
+            ("IFF_ALTPHYS" variable (:constant-flag t) nil [4554 4565])
+            ("IFF_MULTICAST" variable (:constant-flag t) nil [4624 4637])
+            ("IFCAP_RXCSUM" variable (:constant-flag t) nil [5591 5603])
+            ("IFCAP_TXCSUM" variable (:constant-flag t) nil [5654 5666])
+            ("IFCAP_VLAN_MTU" variable (:constant-flag t) nil [5717 5731])
+            ("IFCAP_VLAN_HWTAGGING" variable (:constant-flag t) nil [5775 5795])
+            ("IFCAP_JUMBO_MTU" variable (:constant-flag t) nil [5844 5859])
+            ("IFCAP_TSO4" variable (:constant-flag t) nil [5907 5917])
+            ("IFCAP_TSO6" variable (:constant-flag t) nil [5973 5983])
+            ("IFCAP_LRO" variable (:constant-flag t) nil [6040 6049])
+            ("IFCAP_AV" variable (:constant-flag t) nil [6102 6110])
+            ("IFCAP_TXSTATUS" variable (:constant-flag t) nil [6159 6173])
+            ("IFCAP_SKYWALK" variable (:constant-flag t) nil [6230 6243])
+            ("IFCAP_HW_TIMESTAMP" variable (:constant-flag t) nil [6298 6316])
+            ("IFCAP_SW_TIMESTAMP" variable (:constant-flag t) nil [6365 6383])
+            ("IFCAP_HWCSUM" variable (:constant-flag t) nil [6433 6445])
+            ("IFCAP_TSO" variable (:constant-flag t) nil [6484 6493])
+            ("IFCAP_VALID" variable (:constant-flag t) nil [6529 6540])
+            ("IFQ_MAXLEN" variable (:constant-flag t) nil [6739 6749])
+            ("IFNET_SLOWHZ" variable (:constant-flag t) nil [6762 6774])
+            ("IFQ_TARGET_DELAY" variable (:constant-flag t) nil [6815 6831])
+            ("IFQ_UPDATE_INTERVAL" variable (:constant-flag t) nil [6874 6893])
+            ("if_msghdr" type
+               (:members 
+                  ( ("ifm_msglen" variable (:type "unsigned short") (reparse-symbol classsubparts) [7064 7090])
+                    ("ifm_version" variable (:type "unsigned char") (reparse-symbol classsubparts) [7130 7156])
+                    ("ifm_type" variable (:type "unsigned char") (reparse-symbol classsubparts) [7192 7215])
+                    ("ifm_addrs" variable (:type "int") (reparse-symbol classsubparts) [7236 7251])
+                    ("ifm_flags" variable (:type "int") (reparse-symbol classsubparts) [7274 7289])
+                    ("ifm_index" variable (:type "unsigned short") (reparse-symbol classsubparts) [7315 7340])
+                    ("ifm_data" variable (:type ("if_data" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7373 7397]))                  
+                :type "struct")
+                nil [7044 7441])
+            ("ifa_msghdr" type
+               (:members 
+                  ( ("ifam_msglen" variable (:type "unsigned short") (reparse-symbol classsubparts) [7586 7613])
+                    ("ifam_version" variable (:type "unsigned char") (reparse-symbol classsubparts) [7653 7680])
+                    ("ifam_type" variable (:type "unsigned char") (reparse-symbol classsubparts) [7716 7740])
+                    ("ifam_addrs" variable (:type "int") (reparse-symbol classsubparts) [7761 7777])
+                    ("ifam_flags" variable (:type "int") (reparse-symbol classsubparts) [7800 7816])
+                    ("ifam_index" variable (:type "unsigned short") (reparse-symbol classsubparts) [7843 7869])
+                    ("ifam_metric" variable (:type "int") (reparse-symbol classsubparts) [7902 7919]))                  
+                :type "struct")
+                nil [7565 7948])
+            ("ifma_msghdr" type
+               (:members 
+                  ( ("ifmam_msglen" variable (:type "unsigned short") (reparse-symbol classsubparts) [8083 8111])
+                    ("ifmam_version" variable (:type "unsigned char") (reparse-symbol classsubparts) [8151 8179])
+                    ("ifmam_type" variable (:type "unsigned char") (reparse-symbol classsubparts) [8215 8240])
+                    ("ifmam_addrs" variable (:type "int") (reparse-symbol classsubparts) [8261 8278])
+                    ("ifmam_flags" variable (:type "int") (reparse-symbol classsubparts) [8301 8318])
+                    ("ifmam_index" variable (:type "unsigned short") (reparse-symbol classsubparts) [8345 8372]))                  
+                :type "struct")
+                nil [8061 8406])
+            ("if_msghdr2" type
+               (:members 
+                  ( ("ifm_msglen" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8519 8538])
+                    ("ifm_version" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8583 8602])
+                    ("ifm_type" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8638 8654])
+                    ("ifm_addrs" variable (:type "int") (reparse-symbol classsubparts) [8675 8689])
+                    ("ifm_flags" variable (:type "int") (reparse-symbol classsubparts) [8712 8726])
+                    ("ifm_index" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8752 8770])
+                    ("ifm_snd_len" variable (:type "int") (reparse-symbol classsubparts) [8803 8819])
+                    ("ifm_snd_maxlen" variable (:type "int") (reparse-symbol classsubparts) [8862 8881])
+                    ("ifm_snd_drops" variable (:type "int") (reparse-symbol classsubparts) [8918 8936])
+                    ("ifm_timer" variable (:type "int") (reparse-symbol classsubparts) [8974 8988])
+                    ("ifm_data" variable (:type ("if_data64" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9026 9052]))                  
+                :type "struct")
+                nil [8498 9087])
+            ("ifma_msghdr2" type
+               (:members 
+                  ( ("ifmam_msglen" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9211 9232])
+                    ("ifmam_version" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9277 9298])
+                    ("ifmam_type" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9334 9352])
+                    ("ifmam_addrs" variable (:type "int") (reparse-symbol classsubparts) [9373 9389])
+                    ("ifmam_flags" variable (:type "int") (reparse-symbol classsubparts) [9412 9428])
+                    ("ifmam_index" variable (:type ("u_short" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9455 9475])
+                    ("ifmam_refcount" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9508 9531]))                  
+                :type "struct")
+                nil [9188 9534])
+            ("ifdevmtu" type
+               (:members 
+                  ( ("ifdm_current" variable (:type "int") (reparse-symbol classsubparts) [9739 9756])
+                    ("ifdm_min" variable (:type "int") (reparse-symbol classsubparts) [9758 9771])
+                    ("ifdm_max" variable (:type "int") (reparse-symbol classsubparts) [9773 9786]))                  
+                :type "struct")
+                nil [9720 9789])
+            ("ifkpi" type
+               (:members 
+                  ( ("ifk_module_id" variable (:type "unsigned int") (reparse-symbol classsubparts) [10761 10788])
+                    ("ifk_type" variable (:type "unsigned int") (reparse-symbol classsubparts) [10790 10812])
+                    ("ifk_data" variable (:type ("" type
+                         (:members 
+                            ( ("ifk_ptr" variable
+                                 (:pointer 1
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [10824 10839])
+                              ("ifk_value" variable (:type "int") (reparse-symbol classsubparts) [10842 10857]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [10814 10870]))                  
+                :type "struct")
+                nil [10745 10873])
+            ("IF_WAKE_ON_MAGIC_PACKET" variable (:constant-flag t) nil [10922 10945])
+            ("ifreq" type
+               (:members 
+                  ( ("ifr_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [11235 11259])
+                    ("ifr_ifru" variable (:type ("" type
+                         (:members 
+                            ( ("ifru_addr" variable (:type ("sockaddr" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [11298 11324])
+                              ("ifru_dstaddr" variable (:type ("sockaddr" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [11327 11356])
+                              ("ifru_broadaddr" variable (:type ("sockaddr" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [11359 11390])
+                              ("ifru_flags" variable (:type "short") (reparse-symbol classsubparts) [11393 11410])
+                              ("ifru_metric" variable (:type "int") (reparse-symbol classsubparts) [11413 11429])
+                              ("ifru_mtu" variable (:type "int") (reparse-symbol classsubparts) [11432 11445])
+                              ("ifru_phys" variable (:type "int") (reparse-symbol classsubparts) [11448 11462])
+                              ("ifru_media" variable (:type "int") (reparse-symbol classsubparts) [11465 11480])
+                              ("ifru_intval" variable (:type "int") (reparse-symbol classsubparts) [11483 11499])
+                              ("ifru_data" variable (:type ("caddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11502 11520])
+                              ("ifru_devmtu" variable (:type ("ifdevmtu" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [11523 11551])
+                              ("ifru_kpi" variable (:type ("ifkpi" type
+                                   (:prototype t
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [11554 11576])
+                              ("ifru_wake_flags" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11579 11605])
+                              ("ifru_route_refcnt" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [11608 11636])
+                              ("ifru_cap" variable
+                                 (:dereference 1
+                                  :type "int")
+                                  (reparse-symbol classsubparts) [11639 11655]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [11288 11668])
+                    ("ifr_addr" variable (:constant-flag t) (reparse-symbol classsubparts) [11677 11685])
+                    ("ifr_dstaddr" variable (:constant-flag t) (reparse-symbol classsubparts) [11727 11738])
+                    ("ifr_broadaddr" variable (:constant-flag t) (reparse-symbol classsubparts) [11800 11813])
+                    ("ifr_flags" variable (:constant-flag t) (reparse-symbol classsubparts) [11887 11896])
+                    ("ifr_metric" variable (:constant-flag t) (reparse-symbol classsubparts) [12076 12086])
+                    ("ifr_mtu" variable (:constant-flag t) (reparse-symbol classsubparts) [12129 12136])
+                    ("ifr_phys" variable (:constant-flag t) (reparse-symbol classsubparts) [12174 12182])
+                    ("ifr_media" variable (:constant-flag t) (reparse-symbol classsubparts) [12230 12239])
+                    ("ifr_data" variable (:constant-flag t) (reparse-symbol classsubparts) [12289 12297])
+                    ("ifr_devmtu" variable (:constant-flag t) (reparse-symbol classsubparts) [12352 12362])
+                    ("ifr_intval" variable (:constant-flag t) (reparse-symbol classsubparts) [12392 12402])
+                    ("ifr_kpi" variable (:constant-flag t) (reparse-symbol classsubparts) [12452 12459])
+                    ("ifr_wake_flags" variable (:constant-flag t) (reparse-symbol classsubparts) [12487 12501])
+                    ("ifr_route_refcnt" variable (:constant-flag t) (reparse-symbol classsubparts) [12559 12575])
+                    ("ifr_reqcap" variable (:constant-flag t) (reparse-symbol classsubparts) [12640 12650])
+                    ("ifr_curcap" variable (:constant-flag t) (reparse-symbol classsubparts) [12709 12719]))                  
+                :type "struct")
+                nil [11166 12770])
+            ("_SIZEOF_ADDR_IFREQ" variable (:constant-flag t) nil [12780 12798])
+            ("ifaliasreq" type
+               (:members 
+                  ( ("ifra_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [12987 13012])
+                    ("ifra_addr" variable (:type ("sockaddr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13041 13067])
+                    ("ifra_broadaddr" variable (:type ("sockaddr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13069 13100])
+                    ("ifra_mask" variable (:type ("sockaddr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [13102 13128]))                  
+                :type "struct")
+                nil [12966 13131])
+            ("rslvmulti_req" type
+               (:members 
+                  ( ("sa" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13157 13177])
+                    ("llsa" variable
+                       (:pointer 2
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [13179 13202]))                  
+                :type "struct")
+                nil [13133 13205])
+            ("ifmediareq" type
+               (:members 
+                  ( ("ifm_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [13245 13269])
+                    ("ifm_current" variable (:type "int") (reparse-symbol classsubparts) [13297 13313])
+                    ("ifm_mask" variable (:type "int") (reparse-symbol classsubparts) [13344 13357])
+                    ("ifm_status" variable (:type "int") (reparse-symbol classsubparts) [13382 13397])
+                    ("ifm_active" variable (:type "int") (reparse-symbol classsubparts) [13419 13434])
+                    ("ifm_count" variable (:type "int") (reparse-symbol classsubparts) [13458 13472])
+                    ("ifm_ulist" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [13510 13525]))                  
+                :type "struct")
+                nil [13224 13547])
+            ("ifdrv" type
+               (:members 
+                  ( ("ifd_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [13600 13625])
+                    ("ifd_cmd" variable (:type "unsigned long") (reparse-symbol classsubparts) [13653 13675])
+                    ("ifd_len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13677 13693])
+                    ("ifd_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [13728 13744]))                  
+                :type "struct")
+                nil [13583 13747])
+            ("IFSTATMAX" variable (:constant-flag t) nil [13994 14003])
+            ("ifstat" type
+               (:members 
+                  ( ("ifs_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [14049 14073])
+                    ("ascii" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [14101 14127]))                  
+                :type "struct")
+                nil [14032 14130])
+            ("ifconf" type
+               (:members 
+                  ( ("ifc_len" variable (:type "int") (reparse-symbol classsubparts) [14339 14351])
+                    ("ifc_ifcu" variable (:type ("" type
+                         (:members 
+                            ( ("ifcu_buf" variable (:type ("caddr_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14396 14413])
+                              ("ifcu_req" variable
+                                 (:pointer 1
+                                  :type ("ifreq" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [14416 14439]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [14386 14452]))                  
+                :type "struct")
+                nil [14322 14455])
+            ("ifc_buf" variable (:constant-flag t) nil [14479 14486])
+            ("ifc_req" variable (:constant-flag t) nil [14534 14541])
+            ("kev_dl_proto_data" type
+               (:members 
+                  ( ("link_data" variable (:type ("net_event_data" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [14681 14716])
+                    ("proto_family" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14718 14743])
+                    ("proto_remaining_count" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14745 14779]))                  
+                :type "struct")
+                nil [14653 14782])
+            ("if_nameindex" type
+               (:members 
+                  ( ("if_index" variable (:type "unsigned int") (reparse-symbol classsubparts) [14861 14884])
+                    ("if_name" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [14902 14917]))                  
+                :type "struct")
+                nil [14838 14959])
+            ("if_freenameindex" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("if_nameindex" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15131 15153]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15107 15154])
+            ("if_nameindex" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("if_nameindex" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15100 15105]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15064 15106])
+            ("if_indextoname" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "char"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [15041 15054])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15055 15062]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [15019 15063])
+            ("if_nametoindex" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "unsigned int"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15004 15017]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [14975 15018]))          
+      :file "if.h"
+      :pointmax 15194
+      :fsize 15193
+      :lastmodtime '(22714 3991 0 0)
+      :unmatched-syntax '((semantic-list 14468 . 14470) (symbol 14464 . 14468) (symbol 14457 . 14463) (punctuation 14456 . 14457) (semantic-list 14318 . 14321) (symbol 14314 . 14318) (number 14319 . 14320) (symbol 14307 . 14313) (number 14319 . 14320) (punctuation 14306 . 14307) (semantic-list 13760 . 13762) (symbol 13756 . 13760) (symbol 13749 . 13755) (punctuation 13748 . 13749) (semantic-list 13579 . 13582) (symbol 13575 . 13579) (number 13580 . 13581) (symbol 13568 . 13574) (number 13580 . 13581) (punctuation 13567 . 13568) (semantic-list 13561 . 13563) (symbol 13557 . 13561) (symbol 13550 . 13556) (punctuation 13549 . 13550) (semantic-list 13219 . 13222) (symbol 13215 . 13219) (number 13220 . 13221) (symbol 13208 . 13214) (number 13220 . 13221) (punctuation 13207 . 13208) (semantic-list 10966 . 10968) (symbol 10962 . 10966) (symbol 10955 . 10961) (punctuation 10954 . 10955) (semantic-list 9803 . 9806) (symbol 9799 . 9803) (number 9804 . 9805) (symbol 9792 . 9798) (number 9804 . 9805) (punctuation 9791 . 9792))
+      :lexical-table 
+        '(("IFF_NOARP" . ((number "0x80" 4089 . 4093)))
+          ("IFF_LINK0" . ((number "0x1000" 4387 . 4393)))
+          ("IFCAP_TSO4" . ((number "0x00020" 5919 . 5926)))
+          ("IFCAP_HW_TIMESTAMP" . ((number "0x00800" 6317 . 6324)))
+          ("IFCAP_TSO" . ((semantic-list "(IFCAP_TSO4 | IFCAP_TSO6)" 6494 . 6519)))
+          ("IFNET_SLOWHZ" . ((number "1" 6775 . 6776)))
+          ("_SIZEOF_ADDR_IFREQ" (spp-arg-list ("ifr") 12798 . 12803) . ((semantic-list "((ifr).ifr_addr.sa_len > sizeof (struct sockaddr) ? \\
+	(sizeof (struct ifreq) - sizeof (struct sockaddr) + \\
+	(ifr).ifr_addr.sa_len) : sizeof (struct ifreq))" 12807 . 12964)))
+          ("ifr_data" . 
+              ((symbol "ifr_ifru" 12298 . 12306) (punctuation "." 12306 . 12307) (symbol "ifru_data" 12307 . 12316)))
+          ("IFF_LINK1" . ((number "0x2000" 4446 . 4452)))
+          ("IFF_MULTICAST" . ((number "0x8000" 4638 . 4644)))
+          ("IFCAP_VALID" . ((semantic-list "(IFCAP_HWCSUM | IFCAP_TSO | IFCAP_LRO | IFCAP_VLAN_MTU | \\
+	IFCAP_VLAN_HWTAGGING | IFCAP_JUMBO_MTU | IFCAP_AV | IFCAP_TXSTATUS | \\
+	IFCAP_SKYWALK | IFCAP_SW_TIMESTAMP | IFCAP_HW_TIMESTAMP)" 6541 . 6729)))
+          ("ifr_wake_flags" . 
+              ((symbol "ifr_ifru" 12502 . 12510) (punctuation "." 12510 . 12511) (symbol "ifru_wake_flags" 12511 . 12526)))
+          ("IFF_LINK2" . ((number "0x4000" 4505 . 4511)))
+          ("IFCAP_TSO6" . ((number "0x00040" 5985 . 5992)))
+          ("IFCAP_AV" . ((number "0x00100" 6112 . 6119)))
+          ("ifr_devmtu" . 
+              ((symbol "ifr_ifru" 12363 . 12371) (punctuation "." 12371 . 12372) (symbol "ifru_devmtu" 12372 . 12383)))
+          ("ifr_curcap" . 
+              ((symbol "ifr_ifru" 12720 . 12728) (punctuation "." 12728 . 12729) (symbol "ifru_cap" 12729 . 12737) (semantic-list "[1]" 12737 . 12740)))
+          ("IF_NAMESIZE" . ((number "16" 3316 . 3318)))
+          ("IFF_ALLMULTI" . ((number "0x200" 4206 . 4211)))
+          ("IFCAP_TXCSUM" . ((number "0x00002" 5668 . 5675)))
+          ("IFCAP_LRO" . ((number "0x00080" 6051 . 6058)))
+          ("IFF_OACTIVE" . ((number "0x400" 4269 . 4274)))
+          ("ifr_phys" . 
+              ((symbol "ifr_ifru" 12183 . 12191) (punctuation "." 12191 . 12192) (symbol "ifru_phys" 12192 . 12201)))
+          ("ifr_kpi" . 
+              ((symbol "ifr_ifru" 12461 . 12469) (punctuation "." 12469 . 12470) (symbol "ifru_kpi" 12470 . 12478)))
+          ("_NET_IF_H_")
+          ("IFNAMSIZ" . ((symbol "IF_NAMESIZE" 11215 . 11226)))
+          ("ifr_flags" . 
+              ((symbol "ifr_ifru" 11897 . 11905) (punctuation "." 11905 . 11906) (symbol "ifru_flags" 11906 . 11916)))
+          ("ifr_addr" . 
+              ((symbol "ifr_ifru" 11686 . 11694) (punctuation "." 11694 . 11695) (symbol "ifru_addr" 11695 . 11704)))
+          ("IFF_PROMISC" . ((number "0x100" 4152 . 4157)))
+          ("IFF_ALTPHYS" . ((symbol "IFF_LINK2" 4566 . 4575)))
+          ("ifc_buf" . 
+              ((symbol "ifc_ifcu" 14487 . 14495) (punctuation "." 14495 . 14496) (symbol "ifcu_buf" 14496 . 14504)))
+          ("ifr_dstaddr" . 
+              ((symbol "ifr_ifru" 11739 . 11747) (punctuation "." 11747 . 11748) (symbol "ifru_dstaddr" 11748 . 11760)))
+          ("ifr_mtu" . 
+              ((symbol "ifr_ifru" 12138 . 12146) (punctuation "." 12146 . 12147) (symbol "ifru_mtu" 12147 . 12155)))
+          ("IFF_UP" . ((number "0x1" 3702 . 3705)))
+          ("IFF_DEBUG" . ((number "0x4" 3804 . 3807)))
+          ("IFF_POINTOPOINT" . ((number "0x10" 3907 . 3911)))
+          ("IFCAP_SW_TIMESTAMP" . ((number "0x01000" 6384 . 6391)))
+          ("IF_WAKE_ON_MAGIC_PACKET" . ((number "0x01" 10947 . 10951)))
+          ("ifr_media" . 
+              ((symbol "ifr_ifru" 12240 . 12248) (punctuation "." 12248 . 12249) (symbol "ifru_media" 12249 . 12259)))
+          ("IFF_BROADCAST" . ((number "0x2" 3751 . 3754)))
+          ("IFCAP_TXSTATUS" . ((number "0x00200" 6175 . 6182)))
+          ("IFCAP_SKYWALK" . ((number "0x00400" 6245 . 6252)))
+          ("IFCAP_HWCSUM" . ((semantic-list "(IFCAP_RXCSUM | IFCAP_TXCSUM)" 6446 . 6475)))
+          ("IFQ_MAXLEN" . ((number "128" 6750 . 6753)))
+          ("IFQ_TARGET_DELAY" . ((semantic-list "(10ULL * 1000 * 1000)" 6832 . 6853)))
+          ("ifr_intval" . 
+              ((symbol "ifr_ifru" 12403 . 12411) (punctuation "." 12411 . 12412) (symbol "ifru_intval" 12412 . 12423)))
+          ("IFF_NOTRAILERS" . ((number "0x20" 3975 . 3979)))
+          ("IFF_RUNNING" . ((number "0x40" 4039 . 4043)))
+          ("IFF_SIMPLEX" . ((number "0x800" 4327 . 4332)))
+          ("IFCAP_VLAN_MTU" . ((number "0x00004" 5733 . 5740)))
+          ("IFSTATMAX" . ((number "800" 14004 . 14007)))
+          ("ifc_req" . 
+              ((symbol "ifc_ifcu" 14542 . 14550) (punctuation "." 14550 . 14551) (symbol "ifcu_req" 14551 . 14559)))
+          ("ifr_broadaddr" . 
+              ((symbol "ifr_ifru" 11814 . 11822) (punctuation "." 11822 . 11823) (symbol "ifru_broadaddr" 11823 . 11837)))
+          ("ifr_metric" . 
+              ((symbol "ifr_ifru" 12087 . 12095) (punctuation "." 12095 . 12096) (symbol "ifru_metric" 12096 . 12107)))
+          ("ifr_route_refcnt" . 
+              ((symbol "ifr_ifru" 12576 . 12584) (punctuation "." 12584 . 12585) (symbol "ifru_route_refcnt" 12585 . 12602)))
+          ("ifr_reqcap" . 
+              ((symbol "ifr_ifru" 12651 . 12659) (punctuation "." 12659 . 12660) (symbol "ifru_cap" 12660 . 12668) (semantic-list "[0]" 12668 . 12671)))
+          ("IFCAP_RXCSUM" . ((number "0x00001" 5605 . 5612)))
+          ("IFCAP_JUMBO_MTU" . ((number "0x00010" 5861 . 5868)))
+          ("IFF_LOOPBACK" . ((number "0x8" 3854 . 3857)))
+          ("IFCAP_VLAN_HWTAGGING" . ((number "0x00008" 5796 . 5803)))
+          ("IFQ_UPDATE_INTERVAL" . ((semantic-list "(100ULL * 1000 * 1000)" 6894 . 6916)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_NET_IF_VAR_H_" variable (:constant-flag t) nil [3323 3337])
+            ("sys/appleapiopts.h" include (:system-flag t) nil [3339 3368])
+            ("stdint.h" include (:system-flag t) nil [3369 3388])
+            ("sys/types.h" include (:system-flag t) nil [3389 3411])
+            ("sys/time.h" include (:system-flag t) nil [3412 3433])
+            ("sys/queue.h" include (:system-flag t) nil [3434 3456])
+            ("APPLE_IF_FAM_LOOPBACK" variable (:constant-flag t) nil [3508 3529])
+            ("APPLE_IF_FAM_ETHERNET" variable (:constant-flag t) nil [3541 3562])
+            ("APPLE_IF_FAM_SLIP" variable (:constant-flag t) nil [3574 3591])
+            ("APPLE_IF_FAM_TUN" variable (:constant-flag t) nil [3607 3623])
+            ("APPLE_IF_FAM_VLAN" variable (:constant-flag t) nil [3640 3657])
+            ("APPLE_IF_FAM_PPP" variable (:constant-flag t) nil [3673 3689])
+            ("APPLE_IF_FAM_PVC" variable (:constant-flag t) nil [3706 3722])
+            ("APPLE_IF_FAM_DISC" variable (:constant-flag t) nil [3739 3756])
+            ("APPLE_IF_FAM_MDECAP" variable (:constant-flag t) nil [3772 3791])
+            ("APPLE_IF_FAM_GIF" variable (:constant-flag t) nil [3805 3821])
+            ("APPLE_IF_FAM_FAITH" variable (:constant-flag t) nil [3839 3857])
+            ("APPLE_IF_FAM_STF" variable (:constant-flag t) nil [3890 3906])
+            ("APPLE_IF_FAM_FIREWIRE" variable (:constant-flag t) nil [3924 3945])
+            ("APPLE_IF_FAM_BOND" variable (:constant-flag t) nil [3958 3975])
+            ("IF_MINMTU" variable (:constant-flag t) nil [4120 4129])
+            ("IF_MAXMTU" variable (:constant-flag t) nil [4141 4150])
+            ("IFNAMSIZ" variable (:constant-flag t) nil [5291 5299])
+            ("net_event_data" type
+               (:members 
+                  ( ("if_family" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5429 5449])
+                    ("if_unit" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5451 5469])
+                    ("if_name" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [5471 5495]))                  
+                :type "struct")
+                nil [5404 5498])
+            ("sys/_types/_timeval32.h" include (:system-flag t) nil [5522 5556])
+            ("IF_DATA_TIMEVAL" variable (:constant-flag t) nil [5565 5580])
+            ("if_data" type
+               (:members 
+                  ( ("ifi_type" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5823 5840])
+                    ("ifi_typelen" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5873 5893])
+                    ("ifi_physical" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5925 5946])
+                    ("ifi_addrlen" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5988 6008])
+                    ("ifi_hdrlen" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6037 6056])
+                    ("ifi_recvquota" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6084 6106])
+                    ("ifi_xmitquota" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6146 6168])
+                    ("ifi_unused1" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6205 6225])
+                    ("ifi_mtu" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6248 6266])
+                    ("ifi_metric" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6300 6321])
+                    ("ifi_baudrate" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6360 6383])
+                    ("ifi_ipackets" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6428 6451])
+                    ("ifi_ierrors" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6489 6511])
+                    ("ifi_opackets" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6545 6568])
+                    ("ifi_oerrors" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6602 6624])
+                    ("ifi_collisions" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6659 6684])
+                    ("ifi_ibytes" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6722 6743])
+                    ("ifi_obytes" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6783 6804])
+                    ("ifi_imcasts" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6840 6862])
+                    ("ifi_omcasts" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6901 6923])
+                    ("ifi_iqdrops" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6958 6980])
+                    ("ifi_noproto" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7021 7043])
+                    ("ifi_recvtiming" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7085 7110])
+                    ("ifi_xmittiming" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7151 7176])
+                    ("ifi_lastchange" variable (:type ("timeval32" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7216 7254])
+                    ("ifi_unused2" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7297 7319])
+                    ("ifi_hwassist" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7356 7379])
+                    ("ifi_reserved1" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7411 7435])
+                    ("ifi_reserved2" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7458 7482]))                  
+                :type "struct")
+                nil [5768 7506])
+            ("if_data64" type
+               (:members 
+                  ( ("ifi_type" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7679 7696])
+                    ("ifi_typelen" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7730 7750])
+                    ("ifi_physical" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7783 7804])
+                    ("ifi_addrlen" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7847 7867])
+                    ("ifi_hdrlen" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7897 7916])
+                    ("ifi_recvquota" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7945 7967])
+                    ("ifi_xmitquota" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8008 8030])
+                    ("ifi_unused1" variable (:type ("u_char" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8068 8088])
+                    ("ifi_mtu" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8112 8130])
+                    ("ifi_metric" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8165 8186])
+                    ("ifi_baudrate" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8226 8249])
+                    ("ifi_ipackets" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8295 8318])
+                    ("ifi_ierrors" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8357 8379])
+                    ("ifi_opackets" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8414 8437])
+                    ("ifi_oerrors" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8472 8494])
+                    ("ifi_collisions" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8530 8555])
+                    ("ifi_ibytes" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8594 8615])
+                    ("ifi_obytes" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8656 8677])
+                    ("ifi_imcasts" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8714 8736])
+                    ("ifi_omcasts" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8776 8798])
+                    ("ifi_iqdrops" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8834 8856])
+                    ("ifi_noproto" variable (:type ("u_int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8898 8920])
+                    ("ifi_recvtiming" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8963 8988])
+                    ("ifi_xmittiming" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [9030 9055])
+                    ("ifi_lastchange" variable (:type ("timeval32" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [9096 9134]))                  
+                :type "struct")
+                nil [7622 9178])
+            ("ifqueue" type
+               (:members 
+                  ( ("ifq_head" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [9277 9292])
+                    ("ifq_tail" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [9294 9309])
+                    ("ifq_len" variable (:type "int") (reparse-symbol classsubparts) [9311 9323])
+                    ("ifq_maxlen" variable (:type "int") (reparse-symbol classsubparts) [9325 9340])
+                    ("ifq_drops" variable (:type "int") (reparse-symbol classsubparts) [9342 9356]))                  
+                :type "struct")
+                nil [9259 9359]))          
+      :file "if_var.h"
+      :pointmax 9395
+      :fsize 9394
+      :lastmodtime '(22714 3992 0 0)
+      :unmatched-syntax '((semantic-list 9193 . 9195) (symbol 9189 . 9193) (symbol 9182 . 9188) (punctuation 9181 . 9182) (semantic-list 5649 . 5652) (symbol 5645 . 5649) (number 5650 . 5651) (symbol 5638 . 5644) (number 5650 . 5651) (punctuation 5637 . 5638))
+      :lexical-table 
+        '(("APPLE_IF_FAM_LOOPBACK" . ((number "1" 3531 . 3532)))
+          ("APPLE_IF_FAM_TUN" . ((number "4" 3630 . 3631)))
+          ("APPLE_IF_FAM_VLAN" . ((number "5" 3663 . 3664)))
+          ("APPLE_IF_FAM_FAITH" . ((number "11" 3862 . 3864)))
+          ("APPLE_IF_FAM_PPP" . ((number "6" 3696 . 3697)))
+          ("IF_MAXMTU" . ((number "65535" 4151 . 4156)))
+          ("IF_MINMTU" . ((number "72" 4130 . 4132)))
+          ("IFNAMSIZ" . ((number "16" 5300 . 5302)))
+          ("APPLE_IF_FAM_STF" . ((number "12" 3913 . 3915)))
+          ("APPLE_IF_FAM_PVC" . ((number "7" 3729 . 3730)))
+          ("APPLE_IF_FAM_GIF" . ((number "10" 3828 . 3830)))
+          ("APPLE_IF_FAM_MDECAP" . ((number "9" 3795 . 3796)))
+          ("APPLE_IF_FAM_ETHERNET" . ((number "2" 3564 . 3565)))
+          ("APPLE_IF_FAM_SLIP" . ((number "3" 3597 . 3598)))
+          ("APPLE_IF_FAM_BOND" . ((number "14" 3981 . 3983)))
+          ("APPLE_IF_FAM_DISC" . ((number "8" 3762 . 3763)))
+          ("APPLE_IF_FAM_FIREWIRE" . ((number "13" 3947 . 3949)))
+          ("_NET_IF_VAR_H_")
+          ("IF_DATA_TIMEVAL" . ((symbol "timeval32" 5581 . 5590)))
+          )
 ))
   :file "!usr!include!net!semantic.cache"
   :semantic-tag-version "2.0"

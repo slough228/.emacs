@@ -32,7 +32,34 @@
 (require 'cc-mode)
 (require 'semantic)
 
-(add-hook 'c-mode-hook 'auto-complete-mode)
+
+
+
+
+;; correct mac libraries for auto-complete
+
+(defun my:ac-c-header-init ()
+  (require 'auto-complete-c-headers)
+  (add-to-list 'ac-sources 'ac-source-c-headers)
+  (add-to-list 'achead:include-directories '" /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include")
+  (add-to-list 'achead:include-directories '"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1")
+  )
+
+;;when in c or c++ call init add)
+(add-hook 'c++-mode-hook 'my:ac-c-header-init)
+(add-hook 'c-mode-hook 'my:ac-c-header-init)
+
+(defun my:flymake-google-cpp-init ()
+  (require 'flymake-google-cpplint)
+  (custom-set-variables
+   '(flymake-google-cpplint-command "/usr/local/bin/cpplint"))
+  (flymake-google-cpplint-load)
+)
+
+(add-hook 'c-mode-hook 'my:flymake-google-cpp-init)
+(add-hook 'c++-mode-hook 'my:flymake-google-cpp-init)
+
+
 
 (global-semanticdb-minor-mode 1)
 (global-semantic-idle-scheduler-mode 1)
@@ -114,11 +141,12 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" default)))
+    ("e9460a84d876da407d9e6accf9ceba453e2f86f8b86076f37c08ad155de8223c" "5cd0afd0ca01648e1fff95a7a7f8abec925bd654915153fb39ee8e72a8b56a1f" "28ec8ccf6190f6a73812df9bc91df54ce1d6132f18b4c8fcc85d45298569eb53" "5dc0ae2d193460de979a463b907b4b2c6d2c9c4657b2e9e66b8898d2592e3de5" "98cc377af705c0f2133bb6d340bf0becd08944a588804ee655809da5d8140de6" "60b6fc371e0791ee004f36f2e70408d3fa3af1c4d1e16a47f3305ce4b95e4fa8" "67e998c3c23fe24ed0fb92b9de75011b92f35d3e89344157ae0d544d50a63a72" default)))
+ '(flymake-google-cpplint-command "/usr/local/bin/cpplint")
  '(global-linum-mode t)
  '(package-selected-packages
    (quote
-    (yafolding ox-twbs darcula-theme exec-path-from-shell auto-complete irony zenburn-theme company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
+    (atom-dark-theme anti-zenburn-theme afternoon-theme ggtags 0blayout ein py-autopep8 elpy material-theme magit seq let-alist flycheck flymake-google-cpplint auto-complete-c-headers cmake-mode cpputils-cmake pandoc-mode pandoc ox-gfm ox-pandoc yafolding ox-twbs darcula-theme exec-path-from-shell auto-complete zenburn-theme company-c-headers zygospore helm-gtags helm yasnippet ws-butler volatile-highlights use-package undo-tree iedit dtrt-indent counsel-projectile company clean-aindent-mode anzu)))
  '(safe-local-variable-values
    (quote
     ((company-clang-arguments "-I/Users/samuellough/Documents/ANSI_C/c-demo-project/include1/" "-I/Users/samuellough/Documents/ANSI_C/c-demo-project/include2/")))))
@@ -134,3 +162,5 @@
 (setq sr-speedbar-right-side nil)
 
 (exec-path-from-shell-initialize)
+
+(setq ispell-program-name "/usr/local/bin/ispell")

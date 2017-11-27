@@ -6,172 +6,6 @@
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
       :tags 
-        '( ("stdio.h" include (:system-flag t) nil [1 19])
-            ("string.h" include (:system-flag t) nil [46 65])
-            ("stdlib.h" include (:system-flag t) nil [91 110])
-            ("arpa/inet.h" include (:system-flag t) nil [137 159])
-            ("sys/socket.h" include (:system-flag t) nil [160 183])
-            ("unistd.h" include (:system-flag t) nil [184 203])
-            ("pthread.h" include (:system-flag t) nil [204 224])
-            ("BUFLEN" variable (:constant-flag t) nil [235 241])
-            ("PORT" variable (:constant-flag t) nil [291 295])
-            ("TCP_PORT" variable (:constant-flag t) nil [361 369])
-            ("FSS_IP" variable (:constant-flag t) nil [434 440])
-            ("FSS_UDP_PORT" variable (:constant-flag t) nil [461 473])
-            ("FSS_TCP_PORT" variable (:constant-flag t) nil [487 499])
-            ("custhdr" type
-               (:members 
-                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [527 545])
-                    ("padding" variable
-                       (:dereference 1
-                        :type ("u_int8_t" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [550 570])
-                    ("fss_ip" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [575 592])
-                    ("dest_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [597 617])
-                    ("enc_byte_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [622 645]))                  
-                :type "struct")
-                nil [506 697])
-            ("packet" variable
-               (:pointer 1
-                :type ("custhdr" type
-                     (:prototype t
-                      :type "struct")
-                      nil nil))
-                nil [699 723])
-            ("udprequest" type
-               (:members 
-                  ( ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [746 764])
-                    ("from" variable (:type ("sockaddr_in" type
-                         (:prototype t
-                          :type "struct")
-                          nil nil)) (reparse-symbol classsubparts) [766 790])
-                    ("buf" variable
-                       (:dereference 1
-                        :type "char")
-                        (reparse-symbol classsubparts) [792 809]))                  
-                :type "struct")
-                nil [726 812])
-            ("udpserve" function
-               (:prototype-flag t
-                :arguments 
-                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [828 837]))                  
-                :type "void")
-                nil [814 838])
-            ("UDP_connection_handler" function
-               (:prototype-flag t
-                :pointer 1
-                :arguments 
-                  ( ("socketfd" variable
-                       (:pointer 1
-                        :type "void")
-                        (reparse-symbol arg-sub-list) [868 883]))                  
-                :type "void")
-                nil [839 884])
-            ("tcpserve" function
-               (:prototype-flag t
-                :type "void")
-                nil [905 921])
-            ("TCP_connection_handler" function
-               (:prototype-flag t
-                :pointer 1
-                :arguments 
-                  ( ("socketfd" variable
-                       (:pointer 1
-                        :type "void")
-                        (reparse-symbol arg-sub-list) [951 966]))                  
-                :type "void")
-                nil [922 967])
-            ("udpclient" function
-               (:prototype-flag t
-                :pointer 1
-                :type "char")
-                nil [968 987])
-            ("tcp_client" function
-               (:prototype-flag t
-                :pointer 1
-                :type "char")
-                nil [988 1008])
-            ("store_packet" function
-               (:prototype-flag t
-                :arguments 
-                  ( ("buf" variable
-                       (:pointer 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [1027 1037]))                  
-                :type "void")
-                nil [1009 1038])
-            ("decider" function
-               (:arguments 
-                  ( ("buf" variable
-                       (:pointer 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [1108 1118]))                  
-                :type "int")
-                nil [1096 1254])
-            ("store_packet" function
-               (:arguments 
-                  ( ("buf" variable
-                       (:pointer 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [1274 1284]))                  
-                :type "void")
-                nil [1256 1972])
-            ("die" function
-               (:arguments 
-                  ( ("s" variable
-                       (:pointer 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [1983 1991]))                  
-                :type "void")
-                nil [1974 2023])
-            ("main" function
-               (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2034 2039]))                  
-                :type "int")
-                nil [2025 2275])
-            ("udpclient" function
-               (:pointer 1
-                :type "char")
-                nil [2341 4164])
-            ("tcpserve" function (:type "void") nil [4167 5465])
-            ("TCP_connection_handler" function
-               (:pointer 1
-                :arguments 
-                  ( ("socketfd" variable
-                       (:pointer 1
-                        :type "void")
-                        (reparse-symbol arg-sub-list) [5682 5697]))                  
-                :type "void")
-                nil [5653 7309])
-            ("udpserve" function
-               (:arguments 
-                  ( ("port" variable (:type "int") (reparse-symbol arg-sub-list) [7326 7335]))                  
-                :type "void")
-                nil [7312 10571])
-            ("UDP_connection_handler" function
-               (:pointer 1
-                :arguments 
-                  ( ("socketfd" variable
-                       (:pointer 1
-                        :type "void")
-                        (reparse-symbol arg-sub-list) [10685 10701]))                  
-                :type "void")
-                nil [10655 10956]))          
-      :file "udpserver.c"
-      :pointmax 10957
-      :unmatched-syntax nil
-      :lexical-table 
-        '(("TCP_PORT" . ((number "7777" 370 . 374)))
-          ("FSS_UDP_PORT" . ((number "8888" 474 . 478)))
-          ("BUFLEN" . ((number "1024" 242 . 246)))
-          ("PORT" . ((number "6666" 296 . 300)))
-          ("FSS_IP" . ((string "\"127.0.0.1\"" 441 . 452)))
-          ("FSS_TCP_PORT" . ((number "9999" 500 . 504)))
-          )
-)
-    (semanticdb-table "semanticdb-table"
-      :major-mode c-mode
-      :tags 
         '( ("stdio.h" include (:system-flag t) nil [29 46])
             ("string.h" include (:system-flag t) nil [56 74])
             ("stdlib.h" include (:system-flag t) nil [84 102])
@@ -215,8 +49,8 @@
             ("if" code nil nil [1015 1052]))          
       :file "filestorage.py"
       :pointmax 1052
-      :fsize 1051
-      :lastmodtime '(22969 42542 0 0)
+      :fsize 2556
+      :lastmodtime '(22984 60442 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -263,66 +97,139 @@
             ("sys/socket.h" include (:system-flag t) nil [160 183])
             ("unistd.h" include (:system-flag t) nil [184 203])
             ("pthread.h" include (:system-flag t) nil [204 224])
-            ("BUFLEN" variable (:constant-flag t) nil [235 241])
-            ("UDP_PORT" variable (:constant-flag t) nil [291 299])
-            ("TCP_PORT" variable (:constant-flag t) nil [365 373])
-            ("FSS_IP" variable (:constant-flag t) nil [438 444])
-            ("FSS_UDP_PORT" variable (:constant-flag t) nil [465 477])
-            ("FSS_TCP_PORT" variable (:constant-flag t) nil [491 503])
-            ("NUM_SERVER_THREADS" variable (:constant-flag t) nil [517 535])
-            ("MAXTHREADS" variable (:constant-flag t) nil [546 556])
-            ("sockudp" variable (:type "int") nil [586 608])
-            ("recv_len" variable (:type "int") nil [586 608])
+            ("bitwiseencrypt.h" include nil nil [226 253])
+            ("BUFLEN" variable (:constant-flag t) nil [285 291])
+            ("UDP_PORT" variable (:constant-flag t) nil [341 349])
+            ("TCP_PORT" variable (:constant-flag t) nil [415 423])
+            ("FSS_IP" variable (:constant-flag t) nil [488 494])
+            ("FSS_UDP_PORT" variable (:constant-flag t) nil [515 527])
+            ("FSS_TCP_PORT" variable (:constant-flag t) nil [541 553])
+            ("NUM_SERVER_THREADS" variable (:constant-flag t) nil [567 585])
+            ("MAXTHREADS" variable (:constant-flag t) nil [596 606])
+            ("LOG" variable (:constant-flag t) nil [620 623])
+            ("encryption_method" type
+               (:members 
+                  ( ("ROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [660 664])
+                    ("ROL" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [665 669])
+                    ("NOT" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [670 674])
+                    ("XOR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [675 679]))                  
+                :type "enum")
+                nil [636 680])
+            ("method1" variable (:type ("encryption_method" type (:type "enum") nil nil)) nil [681 721])
+            ("method2" variable (:type ("encryption_method" type (:type "enum") nil nil)) nil [681 721])
             ("ConnThread" type
                (:members 
-                  ( ("connection_id" variable (:type "int") (reparse-symbol classsubparts) [630 648])
+                  ( ("connection_id" variable (:type "int") (reparse-symbol classsubparts) [751 769])
                     ("next_thread" variable
                        (:pointer 1
                         :type ("ConnThread" type
                              (:prototype t
                               :type "struct")
                               nil nil))
-                        (reparse-symbol classsubparts) [650 681]))                  
+                        (reparse-symbol classsubparts) [771 802]))                  
                 :type "struct")
-                nil [610 684])
-            ("custhdr" type
+                nil [723 816])
+            ("connThread" type
+               (:typedef ("ConnThread" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [723 816])
+            ("init_packet" type
                (:members 
-                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [707 725])
+                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [843 861])
                     ("padding" variable
                        (:dereference 1
                         :type ("u_int8_t" type (:type "class") nil nil))
-                        (reparse-symbol classsubparts) [730 750])
-                    ("fss_ip" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [755 772])
-                    ("dest_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [777 797])
-                    ("enc_byte_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [802 825])
-                    ("enc_pattern" variable (:type "unsigned char") (reparse-symbol classsubparts) [830 856]))                  
+                        (reparse-symbol classsubparts) [866 886])
+                    ("fss_ip" variable (:type ("u_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [891 908])
+                    ("dest_port" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [913 933])
+                    ("enc_byte_len" variable (:type ("u_int16_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [938 961])
+                    ("message" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [966 994]))                  
                 :type "struct")
-                nil [686 882])
-            ("packet" variable
+                nil [818 1126])
+            ("init_packet" variable
                (:pointer 1
-                :type ("custhdr" type
+                :type ("init_packet" type
                      (:prototype t
                       :type "struct")
                       nil nil))
-                nil [884 908])
+                nil [1128 1161])
+            ("other_packets" type
+               (:members 
+                  ( ("msg_type" variable (:type ("u_int8_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1190 1208])
+                    ("padding" variable
+                       (:dereference 1
+                        :type ("u_int8_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1213 1233])
+                    ("message" variable
+                       (:dereference 1
+                        :type "unsigned char")
+                        (reparse-symbol classsubparts) [1238 1266]))                  
+                :type "struct")
+                nil [1163 1269])
             ("udprequest" type
                (:members 
-                  ( ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [930 948])
+                  ( ("id" variable (:type "int") (reparse-symbol classsubparts) [1294 1301])
+                    ("fromlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1303 1321])
                     ("from" variable (:type ("sockaddr_in" type
                          (:prototype t
                           :type "struct")
-                          nil nil)) (reparse-symbol classsubparts) [950 974])
+                          nil nil)) (reparse-symbol classsubparts) [1323 1347])
                     ("buf" variable
                        (:dereference 1
                         :type "unsigned char")
-                        (reparse-symbol classsubparts) [976 1002]))                  
+                        (reparse-symbol classsubparts) [1349 1375])
+                    ("initpack" variable (:type ("init_packet" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1380 1408])
+                    ("encryption_args" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol classsubparts) [1413 1436]))                  
                 :type "struct")
-                nil [910 1005])
+                nil [1271 1618])
+            ("sockudp" variable (:type "int") nil [1645 1667])
+            ("recv_len" variable (:type "int") nil [1645 1667])
+            ("LOGLOCK" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1668 1720])
+            ("mutex1" variable
+               (:default-value "PTHREAD_MUTEX_INITIALIZER"
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [1721 1772])
+            ("connection_num" variable
+               (:default-value "0"
+                :type "int")
+                nil [1806 1829])
+            ("start_thread" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("ConnThread" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1939 1978])
             ("udpserve" function
                (:prototype-flag t
                 :pointer 1
                 :type "void")
-                nil [1008 1026])
+                nil [2022 2040])
             ("UDP_connection_handler" function
                (:prototype-flag t
                 :pointer 1
@@ -330,14 +237,14 @@
                   ( ("socketfd" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [1056 1071]))                  
+                        (reparse-symbol arg-sub-list) [2070 2085]))                  
                 :type "void")
-                nil [1027 1072])
+                nil [2041 2086])
             ("tcpserve" function
                (:prototype-flag t
                 :pointer 1
                 :type "void")
-                nil [1073 1091])
+                nil [2087 2105])
             ("TCP_connection_handler" function
                (:prototype-flag t
                 :pointer 1
@@ -345,120 +252,304 @@
                   ( ("socketfd" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [1121 1136]))                  
+                        (reparse-symbol arg-sub-list) [2135 2150]))                  
                 :type "void")
-                nil [1092 1137])
+                nil [2106 2151])
             ("udpclient" function
                (:prototype-flag t
                 :pointer 1
-                :type "char")
-                nil [1138 1157])
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2178 2198]))                  
+                :type "unsigned char")
+                nil [2152 2199])
             ("tcp_client" function
                (:prototype-flag t
                 :pointer 1
-                :type "char")
-                nil [1158 1178])
+                :arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2227 2236]))                  
+                :type "unsigned char")
+                nil [2200 2237])
             ("store_packet" function
                (:prototype-flag t
                 :arguments 
-                  ( ("buf" variable
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2256 2289])
+                    ("buf" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1197 1207]))                  
+                        (reparse-symbol arg-sub-list) [2290 2300]))                  
                 :type "void")
-                nil [1179 1208])
+                nil [2238 2301])
             ("printbuf" function
                (:prototype-flag t
-                :pointer 1
                 :arguments 
                   ( ("buf" variable
                        (:pointer 1
                         :type "unsigned char")
-                        (reparse-symbol arg-sub-list) [1225 1244]))                  
+                        (reparse-symbol arg-sub-list) [2316 2335]))                  
                 :type "void")
-                nil [1209 1245])
+                nil [2302 2336])
+            ("myencrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2352 2377])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2378 2401])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2402 2422])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2423 2451]))                  
+                :type "void")
+                nil [2337 2452])
+            ("mydecrypt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2468 2494])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2495 2523]))                  
+                :type "void")
+                nil [2453 2524])
+            ("LOGDATA" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("prepend" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2538 2553])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2554 2574]))                  
+                :type "void")
+                nil [2525 2575])
+            ("packethandle" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("incoming" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2613 2637]))                  
+                :type ("other_packets" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2577 2638])
+            ("insert_thread" function
+               (:arguments 
+                  ( ("c_id" variable (:type "int") (reparse-symbol arg-sub-list) [2659 2668]))                  
+                :type "void")
+                nil [2640 3410])
+            ("remove_thread" function
+               (:arguments 
+                  ( ("c_id" variable (:type "int") (reparse-symbol arg-sub-list) [3431 3440]))                  
+                :type "void")
+                nil [3412 4384])
+            ("print_threads" function (:type "void") nil [4385 4655])
+            ("mydecrypt" function
+               (:arguments 
+                  ( ("ciphertext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4674 4700])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4701 4729]))                  
+                :type "void")
+                nil [4659 7301])
+            ("myencrypt" function
+               (:arguments 
+                  ( ("plaintext" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7391 7416])
+                    ("pattern" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7417 7440])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [7441 7461])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7462 7490]))                  
+                :type "void")
+                nil [7376 12573])
+            ("generatepacket" function
+               (:arguments 
+                  ( ("b" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12595 12613]))                  
+                :type "void")
+                nil [12575 12618])
             ("decider" function
                (:arguments 
                   ( ("buf" variable
                        (:pointer 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [1315 1325]))                  
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [12689 12708]))                  
                 :type "int")
-                nil [1303 1461])
+                nil [12677 12844])
             ("store_packet" function
                (:arguments 
-                  ( ("buf" variable
+                  ( ("request" variable
+                       (:pointer 1
+                        :type ("udprequest" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12864 12892])
+                    ("buf" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1481 1491]))                  
+                        (reparse-symbol arg-sub-list) [12893 12903]))                  
                 :type "void")
-                nil [1463 1809])
+                nil [12846 13483])
             ("die" function
                (:arguments 
                   ( ("s" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1820 1828]))                  
+                        (reparse-symbol arg-sub-list) [13494 13502]))                  
                 :type "void")
-                nil [1811 1860])
+                nil [13485 13534])
             ("main" function
                (:arguments 
-                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1871 1876]))                  
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13545 13550]))                  
                 :type "int")
-                nil [1862 2690])
-            ("udpclient" function
-               (:pointer 1
-                :type "char")
-                nil [2756 4579])
+                nil [13536 15218])
             ("tcpserve" function
                (:pointer 1
                 :type "void")
-                nil [4582 6055])
+                nil [15223 16732])
             ("TCP_connection_handler" function
                (:pointer 1
                 :arguments 
                   ( ("socketfd" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [6270 6285]))                  
+                        (reparse-symbol arg-sub-list) [16947 16962]))                  
                 :type "void")
-                nil [6241 7893])
+                nil [16918 18826])
+            ("tcp_client" function
+               (:pointer 1
+                :arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18917 18926]))                  
+                :type "unsigned char")
+                nil [18890 20109])
             ("udpserve" function
                (:pointer 1
                 :type "void")
-                nil [7896 10180])
+                nil [20111 22466])
             ("UDP_connection_handler" function
                (:pointer 1
                 :arguments 
                   ( ("request_sock" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [10294 10314]))                  
+                        (reparse-symbol arg-sub-list) [22580 22600]))                  
                 :type "void")
-                nil [10264 11302])
-            ("printbuf" function
+                nil [22550 24670])
+            ("packethandle" function
                (:pointer 1
                 :arguments 
+                  ( ("incoming" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24767 24791]))                  
+                :type ("other_packets" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24731 25192])
+            ("udpclient" function
+               (:pointer 1
+                :arguments 
+                  ( ("request_sock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [25283 25303]))                  
+                :type "unsigned char")
+                nil [25257 28481])
+            ("printbuf" function
+               (:arguments 
                   ( ("buf" variable
                        (:pointer 1
                         :type "unsigned char")
-                        (reparse-symbol arg-sub-list) [11320 11339]))                  
+                        (reparse-symbol arg-sub-list) [28499 28518]))                  
                 :type "void")
-                nil [11304 11542]))          
+                nil [28485 28793])
+            ("LOGDATA" function
+               (:arguments 
+                  ( ("prepend" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28888 28903])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [28904 28924]))                  
+                :type "void")
+                nil [28875 29215]))          
       :file "FileTransferService.c"
-      :pointmax 11543
-      :fsize 11542
-      :lastmodtime '(22976 14292 0 0)
+      :pointmax 29216
+      :fsize 29215
+      :lastmodtime '(22985 2194 0 0)
       :unmatched-syntax nil
       :lexical-table 
-        '(("TCP_PORT" . ((number "7777" 374 . 378)))
-          ("FSS_UDP_PORT" . ((number "8888" 478 . 482)))
-          ("NUM_SERVER_THREADS" . ((number "2" 536 . 537)))
-          ("BUFLEN" . ((number "1024" 242 . 246)))
-          ("UDP_PORT" . ((number "6666" 300 . 304)))
-          ("FSS_IP" . ((string "\"127.0.0.1\"" 445 . 456)))
-          ("FSS_TCP_PORT" . ((number "9999" 504 . 508)))
-          ("MAXTHREADS" . ((number "1000" 557 . 561)))
+        '(("TCP_PORT" . ((number "7778" 424 . 428)))
+          ("FSS_UDP_PORT" . ((number "8888" 528 . 532)))
+          ("NUM_SERVER_THREADS" . ((number "2" 586 . 587)))
+          ("BUFLEN" . ((number "1024" 292 . 296)))
+          ("LOG" . ((string "\"FTS.log\"" 624 . 633)))
+          ("UDP_PORT" . ((number "6666" 350 . 354)))
+          ("FSS_IP" . ((string "\"127.0.0.1\"" 495 . 506)))
+          ("FSS_TCP_PORT" . ((number "9999" 554 . 558)))
+          ("MAXTHREADS" . ((number "1000" 607 . 611)))
           )
 )
     (semanticdb-table "semanticdb-table"
@@ -493,7 +584,175 @@
         '(("BUFLEN" . ((number "512" 200 . 203)))
           ("PORT" . ((number "8888" 254 . 258)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("printbincharpad" function
+               (:arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [63 70]))                  
+                :type "void")
+                nil [42 186])
+            ("BITXOR" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [202 221])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [222 242])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [243 251])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [252 261]))                  
+                :type "void")
+                nil [188 559])
+            ("BITNOT" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [575 594])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [595 615])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [616 625]))                  
+                :type "void")
+                nil [561 802])
+            ("BITROR" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [975 994])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [995 1015])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1016 1024])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1025 1034]))                  
+                :type "void")
+                nil [961 1276])
+            ("BITROL" function
+               (:pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1291 1310])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1311 1331])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1332 1340])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [1341 1350]))                  
+                :type "void")
+                nil [1277 1616])
+            ("lenHelper" function
+               (:arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1633 1644]))                  
+                :type "int")
+                nil [1619 1762]))          
+      :file "bitwiseencrypt.c"
+      :pointmax 1763
+      :fsize 1794
+      :lastmodtime '(22984 60442 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("printbincharpad" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("c" variable (:type "char") (reparse-symbol arg-sub-list) [63 70]))                  
+                :type "void")
+                nil [42 71])
+            ("BITXOR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [86 105])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [106 126])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [127 135])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [136 145]))                  
+                :type "void")
+                nil [72 146])
+            ("BITNOT" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [161 180])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [181 201])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [202 211]))                  
+                :type "void")
+                nil [147 212])
+            ("BITROR" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [227 246])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [247 267])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [268 276])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [277 286]))                  
+                :type "void")
+                nil [213 287])
+            ("BITROL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [302 321])
+                    ("dest" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [322 342])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [343 351])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [352 361]))                  
+                :type "void")
+                nil [288 362])
+            ("lenHelper" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [377 388]))                  
+                :type "int")
+                nil [363 389]))          
+      :file "bitwiseencrypt.h"
+      :pointmax 390
+      :fsize 389
+      :lastmodtime '(22981 28406 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "hello.h"
+      :fsize 31
+      :lastmodtime '(22980 6136 0 0)))
   :file "!Users!samuellough!Documents!DevAssess!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

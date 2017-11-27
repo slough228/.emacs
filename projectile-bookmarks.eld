@@ -1,1 +1,1 @@
-("~/Documents/DevAssess/" "~/.emacs.d/" "~/Documents/ANSI_C/chapter_6_structures/" "~/Documents/ANSI_C/c-demo-project/")
+("~/Documents/CSD/kdbg/" "~/.emacs.d/" "~/Documents/chessengine/" "~/Documents/eresi/" "~/Documents/cpt-lough/" "/usr/local/include/tlpi-book/" "~/Downloads/Ch8/" "~/Documents/CHESS_ENGINE/" "~/Documents/DevAssess/" "~/Documents/ANSI_C/chapter_6_structures/" "~/Documents/ANSI_C/c-demo-project/")
